@@ -32,9 +32,9 @@ html{background-color:black;height:100%;}
 .text a:hover{color:#00c0ff;}
 .youtube{padding-bottom:56.25%;position:relative;}
 .youtube iframe{height:100%;position:absolute;width:100%;}
-.animation-zoom-out{animation:animation-zoom-out 3s ease;will-change:animation,transform;}
-@keyframes animation-zoom-out{0%{transform:scale(1);}
-100%{transform:scale(1);}}
+.animation-slide-in{animation:animation-slide-in 1s ease;will-change:animation,transform;}
+@keyframes animation-slide-in{0%{transform:translateY(-300px);}
+100%{transform:translateY(0px);}}
 .color-contact{background-color:#222222;color:#888888;}
 .color-copyright{background-color:#111111;color:#888888;}
 .color-default{background-color:#eeeeee;color:#555555;}
