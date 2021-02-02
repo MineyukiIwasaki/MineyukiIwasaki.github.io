@@ -13,7 +13,7 @@ let parallax=document.getElementById('parallax');
 let parallax2=document.getElementById('parallax2');
 let parallax3=document.getElementById('parallax3');
 if(parallax){
-parallax2.style.backgroundAttachment='scroll';
+parallax.style.backgroundAttachment='scroll';
 parallax.style.backgroundPositionY=String(0.5*window.pageYOffset)+'px';
 }
 if(parallax2){
