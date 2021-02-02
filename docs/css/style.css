@@ -15,6 +15,7 @@ html{background-color:black;height:100%;}
 .message h1{font-size:28px;font-weight:normal;text-align:left;}
 .message h2{font-size:16px;font-weight:normal;text-align:right;}
 .parallax{background-position:center;background-repeat:no-repeat;background-size:cover;height:100%;padding:0% 0%;}
+.parallax div{width:100%;}
 .parallax h1{font-size:56px;font-weight:bold;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .parallax h2{font-size:28px;font-weight:normal;text-align:center;}
 .poster img{width:100%;}
@@ -33,7 +34,7 @@ html{background-color:black;height:100%;}
 .youtube{padding-bottom:56.25%;position:relative;}
 .youtube iframe{height:100%;position:absolute;width:100%;}
 .animation-zoom-out{animation:animation-zoom-out 3s ease;will-change:animation,transform;}
-@keyframes animation-zoom-out{0%{transform:scale(1);}
+@keyframes animation-zoom-out{0%{transform:scale(2);}
 100%{transform:scale(1);}}
 .color-contact{background-color:#222222;color:#888888;}
 .color-copyright{background-color:#111111;color:#888888;}
