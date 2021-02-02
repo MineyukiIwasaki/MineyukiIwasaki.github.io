@@ -17,6 +17,7 @@ html{background-color:black;height:100%;}
 .parallax{background-position:center;background-repeat:no-repeat;background-size:cover;height:100%;padding:0% 0%;}
 .parallax h1{font-size:56px;font-weight:bold;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .parallax h2{font-size:28px;font-weight:normal;text-align:center;}
+.parallax img{width:90%;}
 .poster img{width:100%;}
 .poster3 div{width:calc(100%/3);}
 .poster3 img{width:100%;}
