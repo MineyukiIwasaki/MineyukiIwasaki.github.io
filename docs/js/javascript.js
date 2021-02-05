@@ -1,4 +1,4 @@
-window.addEventListener("scroll",function(){
+window.addEventListener('scroll',function(){
 let header=document.getElementById('header');
 if(header){
 if(window.pageYOffset<50){
@@ -11,7 +11,7 @@ let user_agent=window.navigator.userAgent.toLowerCase();
 let parallax=document.getElementById('parallax');
 let parallax2=document.getElementById('parallax2');
 let parallax3=document.getElementById('parallax3');
-if(user_agent.indexOf("android")!==-1 || user_agent.indexOf("ipad")!==-1 || user_agent.indexOf("iphone")!==-1){
+if(user_agent.indexOf('android')!==-1 || user_agent.indexOf('ipad')!==-1 || user_agent.indexOf('iphone')!==-1){
 if(parallax){
 parallax.style.backgroundPositionY=String(0.5*window.pageYOffset)+'px';
 }
