@@ -30,9 +30,9 @@ html{background-color:black;height:100%;}
 .profile h3{font-size:16px;font-weight:normal;text-align:center;}
 .profile img{width:100%;}
 .profile p{text-align:center;}
-.store-apple{max-width:400px;width:40%;}
+.store-apple{max-width:240px;width:40%;}
 .store-apple img{margin:4px 8px;width:100%;}
-.store-google{max-width:400px;width:50%;}
+.store-google{max-width:300px;width:50%;}
 .store-google img{margin:4px 8px;width:100%;}
 .text{margin:4px 8px;}
 .text a{color:inherit;text-decoration:none;transition:color 0.5s ease;}
