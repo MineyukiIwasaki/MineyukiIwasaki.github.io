@@ -3,6 +3,8 @@ html{background-color:black;height:100%;}
 .contact{padding:16px 0px;}
 .copyright{padding:16px 0px;}
 .document{padding:2% 2%;}
+.document a{color:inherit;text-decoration:none;transition:color 0.5s ease;}
+.document a:hover{color:#00c0ff;}
 .document div{max-width:800px;width:100%;}
 .document h1{font-size:28px;font-weight:normal;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .document h2{font-size:22px;font-weight:normal;}
@@ -47,6 +49,8 @@ html{background-color:black;height:100%;}
 .color-menu{color:#eeeeee;}
 .color-reverse{background-color:#555555;color:#eeeeee;}
 .color-swapon{background-color:#ffc000;color:#555555;}
+@media(prefers-color-scheme:dark){.color-default{background-color:#333333;color:#eeeeee;}
+.color-swapon{background-color:#333333;color:#ffc000;}}
 .container-center{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;}
 .container-space-around{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-around;}
 .font-none{font-size:0px;}
