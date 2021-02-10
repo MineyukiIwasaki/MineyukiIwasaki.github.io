@@ -8,31 +8,31 @@ html{background-color:black;height:100%;}
 .document{padding:2% 2%;}
 .document a{color:inherit;transition:color 0.5s ease;}
 .document a:hover{color:#00c0ff;}
-.document div{max-width:800px;width:100%;}
+.document div{max-width:800px;}
 .document h1{font-size:28px;font-weight:normal;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .document h2{font-size:22px;font-weight:normal;}
 .document h3{color:#888888;font-size:14px;font-weight:normal;text-align:center;}
 .document img{width:100%;}
-.header{padding:8px 0px;position:fixed;transition:background-color 0.5s ease;width:100%;z-index:1;}
-.logo{min-width:220px;width:0%;}
+.header{padding:8px 0px;position:fixed;transition:background-color 0.5s ease;z-index:1;}
+.logo{min-width:200px;width:0%;}
 .logo img{margin:4px 8px;width:100%;}
 .message{padding:2% 2%;}
 .message h1{font-size:28px;font-weight:normal;text-align:left;}
 .message h2{font-size:16px;font-weight:normal;text-align:right;}
-.parallax{background-position:center;background-repeat:no-repeat;background-size:cover;height:100%;padding:0% 0%;}
+.parallax{background-position:center;background-repeat:no-repeat;background-size:cover;height:100%;}
+.parallax div{max-width:800px;padding:2% 2%;}
 .parallax h1{font-size:56px;font-weight:bold;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .parallax h2{font-size:28px;font-weight:normal;text-align:center;}
-.parallax img{width:90%;}
+.parallax img{width:100%;}
 .poster img{width:100%;}
 .poster3 div{width:calc(100%/3);}
 .poster3 img{width:100%;}
 .profile{padding:2% 2%;}
-.profile div{max-width:300px;width:100%;}
+.profile div{max-width:300px;}
 .profile h1{font-size:28px;font-weight:normal;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .profile h2{font-size:22px;font-weight:normal;text-align:center;}
 .profile h3{font-size:16px;font-weight:normal;text-align:center;}
 .profile img{width:100%;}
-.profile p{text-align:center;}
 .store-apple{max-width:200px;width:40%;}
 .store-apple img{margin:4px 8px;width:100%;}
 .store-google{max-width:250px;width:50%;}
