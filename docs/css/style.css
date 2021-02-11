@@ -1,5 +1,6 @@
-body{height:100%;margin:0px;}
-html{background-color:black;height:100%;}
+body{height:100vh;margin:0px;}
+html{background-color:black;}
+img{vertical-align:top;}
 .list{padding:2% 2%;}
 .list a{color:inherit;text-decoration:none;transition:color 0.5s ease;}
 .list a:hover{color:#00c0ff;}
@@ -66,7 +67,6 @@ html{background-color:black;height:100%;}
 .container-center{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;}
 .container-space-around{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-around;}
 .container-space-around-stretch{align-items:stretch;display:flex;flex-wrap:wrap;justify-content:space-around;}
-.font-none{font-size:0px;}
 .font-ubuntu{font-family:'Ubuntu',sans-serif;}
 .padding-top{padding-top:83px;}
 .padding-top-list{padding-top:106px;}
