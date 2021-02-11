@@ -69,6 +69,7 @@ html{background-color:black;height:100%;}
 .font-none{font-size:0px;}
 .font-ubuntu{font-family:'Ubuntu',sans-serif;}
 .padding-top{padding-top:83px;}
+.padding-top-list{padding-top:106px;}
 .fab,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
 .fab.fa-pull-left,.fas.fa-pull-left{margin-right:0.3em;}
 .fab.fa-pull-right,.fas.fa-pull-right{margin-left:0.3em;}
