@@ -10,8 +10,10 @@ img{vertical-align:top;width:100%;}
 .list h3{color:#888888;font-size:14px;font-weight:normal;text-align:center;text-decoration:none;}
 .list img{border-radius:24px;}
 .button{padding:4px 8px;border-radius:8px;}
-.contact{padding:16px 0px;}
-.copyright{padding:16px 0px;}
+.contact{padding:10px;}
+.contact-div{margin:10px;}
+.copyright{padding:10px;}
+.copyright-div{margin:10px;}
 .document{padding:2% 2%;}
 .document a{text-decoration:underline;}
 .document .button a{text-decoration:none;}
@@ -20,9 +22,9 @@ img{vertical-align:top;width:100%;}
 .document h2{font-size:22px;font-weight:normal;}
 .document h3{color:#888888;font-size:14px;font-weight:normal;text-align:center;}
 .document img{border-radius:24px;}
-.header{padding:8px 0px;position:fixed;transition:background-color 0.5s ease;z-index:1;}
-.logo{min-width:200px;width:0%;}
-.logo img{margin:4px 8px;}
+.header{padding:10px;position:fixed;transition:background-color 0.5s ease;z-index:1;}
+.logo{min-width:195px;width:0%;}
+.menu-div{margin:0px 10px;}
 .message{padding:2% 2%;}
 .message h1{font-size:28px;font-weight:normal;text-align:left;}
 .message h2{font-size:16px;font-weight:normal;text-align:right;}
@@ -40,7 +42,7 @@ img{vertical-align:top;width:100%;}
 .store-app-store-not-released{opacity:50%;width:calc(100%/3.39);}
 .store-google-play{width:calc(100%/3);}
 .store-google-play-not-released{opacity:50%;width:calc(100%/3);}
-.text{margin:4px 8px;}
+.text{margin:10px;}
 .youtube{padding-bottom:56.25%;position:relative;}
 .youtube iframe{height:100%;position:absolute;width:100%;}
 .animation-slide-in{animation:animation-slide-in 1s ease;will-change:animation,transform;}
