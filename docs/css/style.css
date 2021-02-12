@@ -1,7 +1,7 @@
 a{color:inherit;text-decoration:none;transition:color 0.5s ease;}
 a:hover{color:#00c0ff;}
-body{margin:0px;}
-html{background-color:black;font-family:'Ubuntu',sans-serif;}
+body{margin:0px;height:100%;}
+html{background-color:black;font-family:'Ubuntu',sans-serif;height:100%;}
 img{vertical-align:top;width:100%;}
 .list{padding:2% 2%;}
 .list div{padding:4px 8px;width:18%;min-width:160px;}
@@ -14,7 +14,7 @@ img{vertical-align:top;width:100%;}
 .contact-div{margin:10px;}
 .copyright{padding:10px;}
 .copyright-div{margin:10px;}
-.document{padding:2% 2%;}
+.document{padding:10px;}
 .document a{text-decoration:underline;}
 .document .button a{text-decoration:none;}
 .document div{max-width:800px;}
@@ -28,7 +28,7 @@ img{vertical-align:top;width:100%;}
 .message{padding:2% 2%;}
 .message h1{font-size:28px;font-weight:normal;text-align:left;}
 .message h2{font-size:16px;font-weight:normal;text-align:right;}
-.parallax{background-position:center;background-repeat:no-repeat;background-size:cover;height:100vh;}
+.parallax{background-position:center;background-repeat:no-repeat;background-size:cover;height:100%;}
 .parallax div{max-width:800px;padding:2% 2%;}
 .parallax h1{font-size:56px;font-weight:bold;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .parallax h2{font-size:28px;font-weight:normal;text-align:center;}
