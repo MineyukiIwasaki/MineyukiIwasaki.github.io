@@ -8,12 +8,12 @@ img{vertical-align:top;width:100%;}
 .list h1{font-size:16px;font-weight:normal;text-align:center;margin:14px 0px;}
 .list h2{font-size:22px;font-weight:normal;}
 .list h3{color:#888888;font-size:14px;font-weight:normal;text-align:center;text-decoration:none;}
-.list img{border-radius:24px;}
-.button{padding:4px 8px;border-radius:8px;}
+.list img{border-radius:25px;}
+.button{border-radius:5px;margin:10px;padding:5px 10px;}
 .contact{padding:10px;}
-.contact-div{margin:10px;}
+.contact div{margin:10px;}
 .copyright{padding:10px;}
-.copyright-div{margin:10px;}
+.copyright div{margin:10px;}
 .document{padding:10px;}
 .document a{text-decoration:underline;}
 .document .button a{text-decoration:none;}
@@ -21,10 +21,10 @@ img{vertical-align:top;width:100%;}
 .document h1{font-size:28px;font-weight:normal;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .document h2{font-size:22px;font-weight:normal;}
 .document h3{color:#888888;font-size:14px;font-weight:normal;text-align:center;}
-.document img{border-radius:24px;}
+.document img{border-radius:25px;}
 .header{padding:10px;position:fixed;transition:background-color 0.5s ease;z-index:1;}
 .logo{min-width:195px;width:0%;}
-.menu-div{margin:0px 10px;}
+.menu div{margin:0px 10px;}
 .message{padding:2% 2%;}
 .message h1{font-size:28px;font-weight:normal;text-align:left;}
 .message h2{font-size:16px;font-weight:normal;text-align:right;}
@@ -42,7 +42,6 @@ img{vertical-align:top;width:100%;}
 .store-app-store-not-released{opacity:50%;width:calc(100%/3.39);}
 .store-google-play{width:calc(100%/3);}
 .store-google-play-not-released{opacity:50%;width:calc(100%/3);}
-.text{margin:10px;}
 .youtube{padding-bottom:56.25%;position:relative;}
 .youtube iframe{height:100%;position:absolute;width:100%;}
 .animation-slide-in{animation:animation-slide-in 1s ease;will-change:animation,transform;}
@@ -61,7 +60,7 @@ img{vertical-align:top;width:100%;}
 .container-center{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;}
 .container-space-around{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-around;}
 .container-space-around-stretch{align-items:stretch;display:flex;flex-wrap:wrap;justify-content:space-around;}
-.padding-top{padding-top:76px;}
+.padding-top-document{padding-top:70px;}
 .padding-top-list{padding-top:106px;}
 .fab,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
 .fab.fa-pull-left,.fas.fa-pull-left{margin-right:0.3em;}
