@@ -3,11 +3,11 @@ a:hover{color:#00c0ff;}
 body{margin:0px;}
 html{background-color:black;font-family:'Ubuntu',sans-serif;}
 img{vertical-align:top;width:100%;}
-.list{padding:2% 2%;}
-.list div{padding:4px 8px;width:18%;min-width:160px;}
-.list h1{font-size:16px;font-weight:normal;text-align:center;margin:14px 0px;}
+.list{}
+.list div{margin:10px;min-width:160px;width:0%;}
+.list h1{font-size:16px;font-weight:normal;text-align:center;margin:10px 0px;}
 .list h2{font-size:22px;font-weight:normal;}
-.list h3{color:#888888;font-size:14px;font-weight:normal;text-align:center;text-decoration:none;}
+.list h3{color:#888888;font-size:14px;font-weight:normal;text-align:center;text-decoration:none;margin:0px;}
 .list img{border-radius:25px;}
 .button{border-radius:5px;margin:10px;padding:5px 10px;}
 .contact{padding:10px;}
@@ -61,7 +61,7 @@ img{vertical-align:top;width:100%;}
 .container-space-around{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-around;}
 .container-space-around-stretch{align-items:stretch;display:flex;flex-wrap:wrap;justify-content:space-around;}
 .padding-top-document{padding-top:70px;}
-.padding-top-list{padding-top:106px;}
+.padding-top-list{padding-top:84px;padding-bottom:16px;}
 .fab,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
 .fab.fa-pull-left,.fas.fa-pull-left{margin-right:0.3em;}
 .fab.fa-pull-right,.fas.fa-pull-right{margin-left:0.3em;}
