@@ -3,7 +3,7 @@ a:hover,a:active,a:focus{color:#00c0ff;}
 body{margin:0px;}
 html{background-color:black;font-family:'Ubuntu',sans-serif;}
 img{vertical-align:top;width:100%;}
-.button{border-radius:5px;margin:10px;padding:5px 10px;}
+.button{border-radius:5px;margin:0px 10px;padding:5px 10px;}
 .contact > div{margin:10px;}
 .copyright > div{margin:10px;}
 .document > div{margin:10px;max-width:800px;}
@@ -43,8 +43,8 @@ img{vertical-align:top;width:100%;}
 .profile > div > h2{font-size:22px;font-weight:normal;text-align:center;}
 .profile > div > h3{font-size:16px;font-weight:normal;text-align:center;}
 .profile > div > p{margin-bottom:0px;}
-.store-app-store{min-width:calc(160px/1.13);opacity:50%;width:calc(100%/3.39);}
-.store-google-play{min-width:160px;opacity:50%;width:calc(100%/3);}
+.store-app-store{margin:10px;min-width:calc(160px/1.12229825518);opacity:40%;width:calc(100%/3.36689476554);}
+.store-google-play{margin:10px;min-width:160px;opacity:40%;width:calc(100%/3);}
 .youtube > div{margin:10px;max-width:800px;width:100%;}
 .youtube > div > div{padding-bottom:56.25%;position:relative;}
 .youtube > div > div > iframe{border-radius:25px;height:100%;position:absolute;width:100%;}
