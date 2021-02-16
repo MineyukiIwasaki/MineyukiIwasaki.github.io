@@ -7,7 +7,7 @@
 import os
 import re
 
-DEPLOY_PATH = '../github.io/docs'
+DEPLOY_PATH = 'docs'
 
 # Find all html, css, js, xml and svg
 for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):

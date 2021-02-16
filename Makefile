@@ -4,7 +4,7 @@
 
 .PHONY: all clean local
 
-DEPLOY_PATH = ../github.io/docs
+DEPLOY_PATH = docs
 
 # All
 all:

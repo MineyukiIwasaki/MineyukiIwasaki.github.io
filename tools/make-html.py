@@ -10,7 +10,7 @@ import re
 import sys
 
 BASE_HTML_FILENAME = 'base.html'
-DEPLOY_PATH = '../github.io/docs'
+DEPLOY_PATH = 'docs'
 LOCAL_DEPLOY_PATH = 'file:///Users/mine/Documents/github.io/docs'
 SOURCE_PATH = 'html'
 

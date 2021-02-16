@@ -8,7 +8,7 @@ import os
 import re
 
 BASE_HTML_FILENAME = 'base.html'
-DEPLOY_PATH = '../github.io/docs'
+DEPLOY_PATH = 'docs'
 SITEMAP_FILENAME = 'sitemap.xml'
 SOURCE_PATH = 'html'
 
