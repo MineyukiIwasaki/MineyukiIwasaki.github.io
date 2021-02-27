@@ -93,4 +93,4 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
         f = open(DEPLOY_PATH + '/' + new_path, 'w', encoding='utf-8')
         f.write(html)
         f.close()
-        print (os.path.basename(__file__) + ': Made ' + DEPLOY_PATH + '/' + new_path + '.')
+        print(os.path.basename(__file__) + ': Made ' + DEPLOY_PATH + '/' + new_path + '.')

@@ -107,7 +107,7 @@ for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
         f = open(dirpath + '/' + filename, 'w', encoding='utf-8')
         f.write(content)
         f.close()
-        print (os.path.basename(__file__) + ': Optimized ' + dirpath + '/' + filename + ' ' + \
+        print(os.path.basename(__file__) + ': Optimized ' + dirpath + '/' + filename + ' ' + \
             str(len(original_content)) + ' byte -> ' + str(len(content)) + ' byte (' + \
             str(100 * len(content) / len(original_content)) + '%).')
 
@@ -120,4 +120,4 @@ for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
 
         # Remove jpg or png
         os.remove(dirpath + '/' + filename)
-        print (os.path.basename(__file__) + ': Removed ' + dirpath + '/' + filename + '.')
+        print(os.path.basename(__file__) + ': Removed ' + dirpath + '/' + filename + '.')

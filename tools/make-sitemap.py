@@ -40,4 +40,4 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
 # Close sitemap
 f.write('</urlset>\n')
 f.close()
-print (os.path.basename(__file__) + ': Made ' + DEPLOY_PATH + '/' + SITEMAP_FILENAME + '.')
+print(os.path.basename(__file__) + ': Made ' + DEPLOY_PATH + '/' + SITEMAP_FILENAME + '.')
