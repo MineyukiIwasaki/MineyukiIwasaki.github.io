@@ -17,7 +17,7 @@ for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
             continue
 
         # Read html, css, js, xml or svg
-        f = open(dirpath + '/' + filename, 'r')
+        f = open(dirpath + '/' + filename, 'r', encoding='utf-8')
         original_content = f.read()
         f.close()
 
@@ -104,12 +104,12 @@ for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
             content = re.sub(r'^\s+', '', content, flags=re.MULTILINE)
 
         # Write html, css, js, xml or svg
-        f = open(dirpath + '/' + filename, 'w')
+        f = open(dirpath + '/' + filename, 'w', encoding='utf-8')
         f.write(content)
         f.close()
-        print os.path.basename(__file__) + ': Optimized ' + dirpath + '/' + filename + ' ' + \
+        print (os.path.basename(__file__) + ': Optimized ' + dirpath + '/' + filename + ' ' + \
             str(len(original_content)) + ' byte -> ' + str(len(content)) + ' byte (' + \
-            str(100 * len(content) / len(original_content)) + '%).'
+            str(100 * len(content) / len(original_content)) + '%).')
 
 # Find all jpg or png
 for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
@@ -120,4 +120,4 @@ for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
 
         # Remove jpg or png
         os.remove(dirpath + '/' + filename)
-        print os.path.basename(__file__) + ': Removed ' + dirpath + '/' + filename + '.'
+        print (os.path.basename(__file__) + ': Removed ' + dirpath + '/' + filename + '.')

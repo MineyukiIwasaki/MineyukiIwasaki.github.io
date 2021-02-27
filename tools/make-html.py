@@ -12,10 +12,11 @@ import sys
 BASE_HTML_FILENAME = 'base.html'
 DEPLOY_PATH = 'docs'
 LOCAL_DEPLOY_PATH = 'file:///Users/mine/Documents/github.io/docs'
+LOCAL_DEPLOY_PATH_WINDOWS = 'file://C:/Users/mine/Documents/github.io/docs'
 SOURCE_PATH = 'html'
 
 # Read base html
-f = open(SOURCE_PATH + '/' + BASE_HTML_FILENAME, 'r')
+f = open(SOURCE_PATH + '/' + BASE_HTML_FILENAME, 'r', encoding='utf-8')
 base_html = f.read()
 f.close()
 
@@ -32,7 +33,7 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
             continue
 
         # Read html
-        f = open(dirpath + '/' + filename, 'r')
+        f = open(dirpath + '/' + filename, 'r', encoding='utf-8')
         html = f.read()
         f.close()
 
@@ -68,7 +69,10 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
         # Setup for local environment if argv has 'local'
         if len(sys.argv) == 2 and sys.argv[1] == 'local':
             html = re.sub(r'(https:\/\/scidoggames\.com.*?\/)\"', r'\1index.html"', html)
-            html = re.sub(r'https:\/\/scidoggames\.com', LOCAL_DEPLOY_PATH, html)
+            if os.name == 'nt':
+                html = re.sub(r'https:\/\/scidoggames\.com', LOCAL_DEPLOY_PATH_WINDOWS, html)
+            else:
+                html = re.sub(r'https:\/\/scidoggames\.com', LOCAL_DEPLOY_PATH, html)
 
         # Make new path
         new_path = re.search('(https:\/\/scidoggames\.com\/)(.*)', url).group(2)
@@ -86,7 +90,7 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
                 os.makedirs(new_dirpath)
 
         # Write html
-        f = open(DEPLOY_PATH + '/' + new_path, 'w')
+        f = open(DEPLOY_PATH + '/' + new_path, 'w', encoding='utf-8')
         f.write(html)
         f.close()
-        print os.path.basename(__file__) + ': Made ' + DEPLOY_PATH + '/' + new_path + '.'
+        print (os.path.basename(__file__) + ': Made ' + DEPLOY_PATH + '/' + new_path + '.')
