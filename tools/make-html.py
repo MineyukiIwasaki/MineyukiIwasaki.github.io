@@ -27,7 +27,7 @@ base_footer = re.search('<footer>.*?<\/footer>', base_html, flags=re.DOTALL).gro
 
 # Find all html
 for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
-    for filename in filenames:
+    for filename in sorted(filenames):
         base, ext = os.path.splitext(filename)
         if ext != '.html' or filename == BASE_HTML_FILENAME:
             continue
