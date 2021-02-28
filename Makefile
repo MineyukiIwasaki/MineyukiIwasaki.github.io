@@ -9,10 +9,10 @@ DEPLOY_PATH = docs
 # All
 all:
 	@make clean
-	@cp -fr css $(DEPLOY_PATH)/css/
-	@cp -fr images $(DEPLOY_PATH)/images/
-	@cp -fr js $(DEPLOY_PATH)/js/
-	@cp -fr press-kits $(DEPLOY_PATH)/press-kits/
+	@cp -fr css $(DEPLOY_PATH)/
+	@cp -fr images $(DEPLOY_PATH)/
+	@cp -fr js $(DEPLOY_PATH)/
+	@cp -fr press-kits $(DEPLOY_PATH)/
 	@cp -f CNAME $(DEPLOY_PATH)/
 	@tools/make-html.py
 	@tools/make-sitemap.py
@@ -25,10 +25,10 @@ clean:
 # Local
 local:
 	@make clean
-	@cp -fr css $(DEPLOY_PATH)/css/
-	@cp -fr images $(DEPLOY_PATH)/images/
-	@cp -fr js $(DEPLOY_PATH)/js/
-	@cp -fr press-kits $(DEPLOY_PATH)/press-kits/
+	@cp -fr css $(DEPLOY_PATH)/
+	@cp -fr images $(DEPLOY_PATH)/
+	@cp -fr js $(DEPLOY_PATH)/
+	@cp -fr press-kits $(DEPLOY_PATH)/
 	@cp -f CNAME $(DEPLOY_PATH)/
 	@tools/make-html.py local
 	@tools/make-sitemap.py
