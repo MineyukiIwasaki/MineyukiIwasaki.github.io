@@ -109,7 +109,7 @@ for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
         f.close()
         print(os.path.basename(__file__) + ': Optimized ' + dirpath + '/' + filename + ' ' + \
             str(len(original_content)) + ' byte -> ' + str(len(content)) + ' byte (' + \
-            str(100 * len(content) / len(original_content)) + '%).')
+            str(int(100 * len(content) / len(original_content))) + '%).')
 
 # Find all jpg or png
 for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
