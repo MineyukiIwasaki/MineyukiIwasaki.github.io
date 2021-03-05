@@ -1,4 +1,6 @@
 # Scidog Games Website and SNS
+<img src="https://scidoggames.com/images/blog/our-website-is-opened/1-1920x1020.webp" width="1280">
+
 | Service | URL |
 | --- | --- |
 | Website | https://scidoggames.com |
