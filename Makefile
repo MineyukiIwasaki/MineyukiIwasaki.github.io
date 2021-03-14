@@ -13,6 +13,7 @@ all:
 	@cp -fr images $(DEPLOY_PATH)/
 	@cp -fr js $(DEPLOY_PATH)/
 	@cp -fr press-kits $(DEPLOY_PATH)/
+	@cp -f app-ads.txt $(DEPLOY_PATH)/
 	@cp -f CNAME $(DEPLOY_PATH)/
 	@tools/make-html.py
 	@tools/make-sitemap.py
@@ -29,6 +30,7 @@ local:
 	@cp -fr images $(DEPLOY_PATH)/
 	@cp -fr js $(DEPLOY_PATH)/
 	@cp -fr press-kits $(DEPLOY_PATH)/
+	@cp -f app-ads.txt $(DEPLOY_PATH)/
 	@cp -f CNAME $(DEPLOY_PATH)/
 	@tools/make-html.py local
 	@tools/make-sitemap.py
