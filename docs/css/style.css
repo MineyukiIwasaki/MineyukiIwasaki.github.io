@@ -11,7 +11,7 @@ img{vertical-align:top;width:100%;}
 .document > div > h2{font-size:22px;font-weight:normal;transform:rotate(0.03deg);}
 .document > div > h3{color:#888888;font-size:14px;font-weight:normal;text-align:center;transform:rotate(0.03deg);}
 .document > div > img{border-radius:25px;}
-.document > div > p,.document > div > ul{transform:rotate(0.03deg);}
+.document > div > p,.document > div > ol,.document > div > ul{transform:rotate(0.03deg);}
 .document > div > p:last-child{margin-bottom:0px;}
 .document a{text-decoration:underline;}
 .document .button a{text-decoration:none;}

@@ -89,7 +89,7 @@ img {
 .document > div > img {
     border-radius: 25px;
 }
-.document > div > p, .document > div > ul {
+.document > div > p, .document > div > ol, .document > div > ul {
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
