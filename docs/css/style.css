@@ -1,7 +1,7 @@
 a{color:inherit;text-decoration:none;transition:color 0.5s ease;}
 a:hover,a:active,a:focus{color:#00c0ff;}
 body{margin:0px;}
-html{background-color:black;font-family:'Ubuntu',sans-serif;}
+html{background-color:black;font-family:'Ubuntu',sans-serif;font-size:16.01px;}
 img{vertical-align:top;width:100%;}
 .button{border-radius:5px;margin:0px 10px;padding:5px 10px;}
 .contact > div{margin:10px;}
@@ -16,15 +16,15 @@ img{vertical-align:top;width:100%;}
 .document .button a{text-decoration:none;}
 .header{position:fixed;transition:background-color 0.5s ease;z-index:1;}
 .list > div{margin:10px;min-width:160px;width:0%;}
-.list > div > a > h1{font-size:16px;font-weight:normal;margin:10px 0px;text-align:center;}
-.list > div > a > h3{color:#888888;font-size:14px;font-weight:normal;margin:0px;text-align:center;}
+.list > div > a > h1{font-size:16.01px;font-weight:normal;margin:10px 0px;text-align:center;}
+.list > div > a > h3{color:#888888;font-size:16.01px;font-weight:normal;margin:0px;text-align:center;}
 .list > div > a > img{border-radius:25px;}
 .logo{margin:0px 10px;min-width:194.27px;width:0%;}
 .menu > div{margin:10px;}
 @media(max-width:400px){.menu > div{margin-bottom:0px;}}
 .message > div{margin:10px;max-width:800px;}
 .message > div > h1{font-size:28px;font-weight:normal;margin-top:0px;text-align:left;}
-.message > div > h2{font-size:16px;font-weight:normal;margin-bottom:0px;text-align:right;}
+.message > div > h2{font-size:16.01px;font-weight:normal;margin-bottom:0px;text-align:right;}
 .parallax{background-position:center;background-repeat:no-repeat;background-size:cover;height:100vh;}
 .parallax > div,.parallax-short > div{margin:10px;max-width:800px;}
 .parallax > div > h1{font-size:56px;font-weight:bold;margin-top:0px;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
@@ -41,7 +41,7 @@ img{vertical-align:top;width:100%;}
 .profile > div{margin:10px;max-width:300px;}
 .profile > div > h1{font-size:28px;font-weight:normal;margin-top:0px;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .profile > div > h2{font-size:22px;font-weight:normal;text-align:center;}
-.profile > div > h3{font-size:16px;font-weight:normal;text-align:center;}
+.profile > div > h3{font-size:16.01px;font-weight:normal;text-align:center;}
 .profile > div > p{margin-bottom:0px;}
 .store-app-store{margin:10px;min-width:calc(160px/1.12229825518);opacity:40%;width:calc(100%/3.36689476554);}
 .store-google-play{margin:10px;min-width:160px;opacity:40%;width:calc(100%/3);}

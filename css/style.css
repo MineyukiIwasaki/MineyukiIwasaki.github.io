@@ -24,6 +24,8 @@ body {
 html {
     background-color: black;
     font-family: 'Ubuntu', sans-serif;
+    /* Temporary fix for Windows */
+    font-size: 16.01px;
 }
 
 /* Img */
@@ -103,14 +105,16 @@ img {
     width: 0%;
 }
 .list > div > a > h1 {
-    font-size: 16px;
+    /* Temporary fix for Windows */
+    font-size: 16.01px;
     font-weight: normal;
     margin: 10px 0px;
     text-align: center;
 }
 .list > div > a > h3 {
     color: #888888;
-    font-size: 14px;
+    /* Temporary fix for Windows */
+    font-size: 16.01px;
     font-weight: normal;
     margin: 0px;
     text-align: center;
@@ -148,7 +152,8 @@ img {
     text-align: left;
 }
 .message > div > h2 {
-    font-size: 16px;
+    /* Temporary fix for Windows */
+    font-size: 16.01px;
     font-weight: normal;
     margin-bottom: 0px;
     text-align: right;
@@ -242,7 +247,8 @@ img {
     text-align: center;
 }
 .profile > div > h3 {
-    font-size: 16px;
+    /* Temporary fix for Windows */
+    font-size: 16.01px;
     font-weight: normal;
     text-align: center;
 }
