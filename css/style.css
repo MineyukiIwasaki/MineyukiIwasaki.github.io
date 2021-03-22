@@ -74,6 +74,8 @@ img {
 }
 .document > div > h3 {
     color: #888888;
+    /* Temporary fix for Windows */
+    font-size: 16.01px;
     font-weight: normal;
     text-align: center;
 }

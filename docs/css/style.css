@@ -9,7 +9,7 @@ img{vertical-align:top;width:100%;}
 .document > div{margin:10px;max-width:800px;}
 .document > div > h1{font-size:28px;font-weight:normal;margin-top:0px;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .document > div > h2{font-size:22px;font-weight:normal;}
-.document > div > h3{color:#888888;font-size:14px;font-weight:normal;text-align:center;}
+.document > div > h3{color:#888888;font-size:16.01px;font-weight:normal;text-align:center;}
 .document > div > img{border-radius:25px;}
 .document > div > p:last-child{margin-bottom:0px;}
 .document a{text-decoration:underline;}
