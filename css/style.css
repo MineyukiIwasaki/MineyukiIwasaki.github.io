@@ -24,8 +24,6 @@ body {
 html {
     background-color: black;
     font-family: 'Ubuntu', sans-serif;
-    /* Temporary fix for Windows */
-    font-size: 16.01px;
 }
 
 /* Img */
@@ -43,6 +41,8 @@ img {
     border-radius: 5px;
     margin: 0px 10px;
     padding: 5px 10px;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 
 /* Contact */
@@ -53,6 +53,8 @@ img {
 /* Copyright */
 .copyright > div {
     margin: 10px;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 
 /* Document */
@@ -67,20 +69,29 @@ img {
     text-align: center;
     text-decoration-color: #00c0ff;
     text-decoration-line: underline;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .document > div > h2 {
     font-size: 22px;
     font-weight: normal;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .document > div > h3 {
     color: #888888;
-    /* Temporary fix for Windows */
-    font-size: 16.01px;
+    font-size: 14px;
     font-weight: normal;
     text-align: center;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .document > div > img {
     border-radius: 25px;
+}
+.document > div > p, .document > div > ul {
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .document > div > p:last-child {
     margin-bottom: 0px;
@@ -106,19 +117,21 @@ img {
     width: 0%;
 }
 .list > div > a > h1 {
-    /* Temporary fix for Windows */
-    font-size: 16.01px;
+    font-size: 16px;
     font-weight: normal;
     margin: 10px 0px;
     text-align: center;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .list > div > a > h3 {
     color: #888888;
-    /* Temporary fix for Windows */
-    font-size: 16.01px;
+    font-size: 14px;
     font-weight: normal;
     margin: 0px;
     text-align: center;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .list > div > a > img {
     border-radius: 25px;
@@ -134,6 +147,8 @@ img {
 /* Menu */
 .menu > div {
     margin: 10px;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 @media (max-width: 400px) {
     .menu > div {
@@ -151,13 +166,16 @@ img {
     font-weight: normal;
     margin-top: 0px;
     text-align: left;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .message > div > h2 {
-    /* Temporary fix for Windows */
-    font-size: 16.01px;
+    font-size: 16px;
     font-weight: normal;
     margin-bottom: 0px;
     text-align: right;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 
 /* Parallax */
@@ -180,12 +198,16 @@ img {
     text-align: center;
     text-decoration-color: #00c0ff;
     text-decoration-line: underline;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .parallax > div > h2 {
     font-size: 28px;
     font-weight: normal;
     margin-bottom: 0px;
     text-align: center;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .parallax-short {
     /* Cannot use background-attachment: fixed with background-size: cover on smart phone */
@@ -200,6 +222,8 @@ img {
     font-weight: normal;
     margin: 0px;
     text-align: center;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 
 /* Poster */
@@ -241,20 +265,27 @@ img {
     text-align: center;
     text-decoration-color: #00c0ff;
     text-decoration-line: underline;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .profile > div > h2 {
     font-size: 22px;
     font-weight: normal;
     text-align: center;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .profile > div > h3 {
-    /* Temporary fix for Windows */
-    font-size: 16.01px;
+    font-size: 16px;
     font-weight: normal;
     text-align: center;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 .profile > div > p {
     margin-bottom: 0px;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
 }
 
 /* Store */
