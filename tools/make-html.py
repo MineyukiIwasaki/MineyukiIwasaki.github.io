@@ -11,8 +11,8 @@ import sys
 
 BASE_HTML_FILENAME = 'base.html'
 DEPLOY_PATH = 'docs'
-LOCAL_DEPLOY_PATH = 'file:///Users/mine/Documents/github.io/docs'
-LOCAL_DEPLOY_PATH_WINDOWS = 'file://C:/Users/miney/Documents/github.io/docs'
+LOCAL_DEPLOY_PATH = 'file:///Users/mine/Documents/Website/docs'
+LOCAL_DEPLOY_PATH_WINDOWS = 'file://C:/Users/miney/Documents/Website/docs'
 SOURCE_PATH = 'html'
 
 # Read base html
