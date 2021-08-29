@@ -8,7 +8,7 @@
 | Twitter | https://twitter.com/ScidogGames |
 | Instagram | https://www.instagram.com/scidoggames |
 | YouTube | https://www.youtube.com/channel/UCWoviNHWJ0if3bQSN8Xscgg |
-| Wikipedia | NA |
+| Wikipedia | :x: |
 
 How to get specific URL on YouTube?
 1. Have 100 or more subscribers
@@ -50,7 +50,7 @@ Managed at https://domains.google.com/registrar/scidoggames.com/email
 ```
 #gamedev #indiedev #madewithunity
 #mobilegame #indiegame #puzzlegame #madewithunity
-#digitalnomad #istanbul #turkey
+#digitalnomad #bangkok #thailand
 ```
 
 ## Hosting
@@ -62,7 +62,7 @@ Managed at https://domains.google.com/registrar/scidoggames.com/email
 | Google Search Console | https://search.google.com/search-console?resource_id=https%3A%2F%2Fscidoggames.com%2F |
 
 ## Todo
-- Support AMP or hamburger?
+- Support hamburger?
 - Change game title on bio when started to make new game for Facebook/Twitter/Instagram/YouTube
 - Change location when moved for Facebook/Twitter/YouTube and hash tag
 - Update verified account for Facebook/Twitter/Instagram/YouTube
