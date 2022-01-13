@@ -37,9 +37,11 @@ Managed at https://domains.google.com/registrar/scidoggames.com/email
 ## Event
 | Country | Name | URL |
 | --- | --- | --- |
+| China | ChinaJoy | https://www.chinajoy.net |
 | Japan | BitSummit | https://bitsummit.org |
 | Japan | Tokyo Game Show | https://expo.nikkeibp.co.jp/tgs |
 | Korea | Busan Indie Connect Festival | https://www.bicfest.org |
+| Korea | G-STAR | https://www.gstar.or.kr |
 | Malaysia | LEVEL UP KL | https://mdec.my/levelupkl |
 | Singapore | GameStart Asia | https://news.gamestart.asia |
 | Taiwan | Taipei Game Show | https://tgs.tca.org.tw |
