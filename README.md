@@ -34,6 +34,17 @@ Hi, I'm Mineyuki from Japan and started indie game developer. Early next year, I
 ## Email
 Managed at https://domains.google.com/registrar/scidoggames.com/email
 
+## Event
+| Country | Name | URL |
+| --- | --- | --- |
+| Japan | BitSummit | https://bitsummit.org |
+| Japan | Tokyo Game Show | https://expo.nikkeibp.co.jp/tgs |
+| Korea | Busan Indie Connect Festival | https://www.bicfest.org |
+| Malaysia | LEVEL UP KL | https://mdec.my/levelupkl |
+| Singapore | GameStart Asia | https://news.gamestart.asia |
+| Taiwan | Taipei Game Show | https://tgs.tca.org.tw |
+| Thailand | Thailand Game Show | https://www.thailandgameshow.com |
+
 ## Google Analytics
 ```
 <!-- Global site tag (gtag.js) - Google Analytics -->
