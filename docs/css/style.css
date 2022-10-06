@@ -52,6 +52,7 @@ img{vertical-align:top;width:100%;}
 .animation-slide-in{animation:animation-slide-in 1s ease;will-change:animation,transform;}
 @keyframes animation-slide-in{0%{transform:translateY(-300px);}
 100%{transform:translateY(0px);}}
+.background-image-chiang-mai{background-image:url(https://scidoggames.com/images/location/chiang-mai-1920x1080.webp);}
 .background-image-bangkok{background-image:url(https://scidoggames.com/images/location/bangkok-1920x1080.webp);}
 .background-image-cebu{background-image:url(https://scidoggames.com/images/location/cebu-1920x1080.webp);}
 .background-image-istanbul{background-image:url(https://scidoggames.com/images/location/istanbul-1920x1080.webp);}

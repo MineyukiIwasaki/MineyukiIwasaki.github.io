@@ -337,6 +337,9 @@ img {
 }
 
 /* Background Image */
+.background-image-chiang-mai {
+    background-image: url(https://scidoggames.com/images/location/chiang-mai-1920x1080.webp);
+}
 .background-image-bangkok {
     background-image: url(https://scidoggames.com/images/location/bangkok-1920x1080.webp);
 }
