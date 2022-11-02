@@ -7,14 +7,8 @@
 | Facebook | https://www.facebook.com/ScidogGames |
 | Twitter | https://twitter.com/ScidogGames |
 | Instagram | https://www.instagram.com/scidoggames |
-| YouTube | https://www.youtube.com/channel/UCWoviNHWJ0if3bQSN8Xscgg |
+| YouTube | https://www.youtube.com/@ScidogGames |
 | Wikipedia | :x: |
-
-How to get specific URL on YouTube?
-1. Have 100 or more subscribers
-2. ~~Be at least 30 days old~~
-3. ~~Have an uploaded photo as a channel icon~~
-4. ~~Have uploaded channel art~~
 
 ## BIO
 ### Home Account
