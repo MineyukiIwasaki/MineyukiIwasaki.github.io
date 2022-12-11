@@ -55,6 +55,9 @@ Managed at https://domains.google.com/registrar/scidoggames.com/email
 | Google Domains | https://domains.google.com/registrar/scidoggames.com |
 | Google Search Console | https://search.google.com/search-console?resource_id=https%3A%2F%2Fscidoggames.com%2F |
 
+## Unity
+app-ads.txt managed at https://dashboard.unity3d.com/gaming/organizations/761278/monetization/organization-settings
+
 ## Todo
 - Change game title on bio when started to make new game for Facebook/Twitter/Instagram/YouTube
 - Change location when moved for Facebook/Twitter/YouTube and hash tag
