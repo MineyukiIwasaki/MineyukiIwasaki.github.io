@@ -1,17 +1,15 @@
-/*---------------------------------------------------------------------------*/
-/* (c) 2021 Mineyuki Iwasaki                                                 */
-/*---------------------------------------------------------------------------*/
+/* (c) 2021 Mineyuki Iwasaki */
 
-/*---------------------------------------------------------------------------*/
-/* Built in class                                                            */
-/*---------------------------------------------------------------------------*/
 /* A */
 a {
     color: inherit;
     text-decoration: none;
     transition: color 0.5s ease;
 }
-a:hover, a:active, a:focus {
+
+a:hover,
+a:active,
+a:focus {
     color: #00c0ff;
 }
 
@@ -33,9 +31,6 @@ img {
     width: 100%;
 }
 
-/*---------------------------------------------------------------------------*/
-/* Section class                                                             */
-/*---------------------------------------------------------------------------*/
 /* Button */
 .button {
     border-radius: 5px;
@@ -46,23 +41,24 @@ img {
 }
 
 /* Contact */
-.contact > div {
+.contact>div {
     margin: 10px;
 }
 
 /* Copyright */
-.copyright > div {
+.copyright>div {
     margin: 10px;
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
 
 /* Document */
-.document > div {
+.document>div {
     margin: 10px;
     max-width: 800px;
 }
-.document > div > h1 {
+
+.document>div>h1 {
     font-size: 28px;
     font-weight: normal;
     margin-top: 0px;
@@ -72,13 +68,15 @@ img {
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
-.document > div > h2 {
+
+.document>div>h2 {
     font-size: 22px;
     font-weight: normal;
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
-.document > div > h3 {
+
+.document>div>h3 {
     color: #888888;
     font-size: 14px;
     font-weight: normal;
@@ -86,19 +84,26 @@ img {
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
-.document > div > img {
+
+.document>div>img {
     border-radius: 25px;
 }
-.document > div > p, .document > div > ol, .document > div > ul {
+
+.document>div>p,
+.document>div>ol,
+.document>div>ul {
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
-.document > div > p:last-child {
+
+.document>div>p:last-child {
     margin-bottom: 0px;
 }
+
 .document a {
     text-decoration: underline;
 }
+
 .document .button a {
     text-decoration: none;
 }
@@ -111,12 +116,13 @@ img {
 }
 
 /* List */
-.list > div {
+.list>div {
     margin: 10px;
     min-width: 160px;
     width: 0%;
 }
-.list > div > a > h1 {
+
+.list>div>a>h1 {
     font-size: 16px;
     font-weight: normal;
     margin: 10px 0px;
@@ -124,7 +130,8 @@ img {
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
-.list > div > a > h3 {
+
+.list>div>a>h3 {
     color: #888888;
     font-size: 14px;
     font-weight: normal;
@@ -133,7 +140,8 @@ img {
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
-.list > div > a > img {
+
+.list>div>a>img {
     border-radius: 25px;
 }
 
@@ -145,23 +153,25 @@ img {
 }
 
 /* Menu */
-.menu > div {
+.menu>div {
     margin: 10px;
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
+
 @media (max-width: 400px) {
-    .menu > div {
+    .menu>div {
         margin-bottom: 0px;
     }
 }
 
 /* Message */
-.message > div {
+.message>div {
     margin: 10px;
     max-width: 800px;
 }
-.message > div > h1 {
+
+.message>div>h1 {
     font-size: 28px;
     font-weight: normal;
     margin-top: 0px;
@@ -169,7 +179,8 @@ img {
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
-.message > div > h2 {
+
+.message>div>h2 {
     font-size: 16px;
     font-weight: normal;
     margin-bottom: 0px;
@@ -187,11 +198,14 @@ img {
     background-size: cover;
     height: 100vh;
 }
-.parallax > div, .parallax-short > div {
+
+.parallax>div,
+.parallax-short>div {
     margin: 10px;
     max-width: 800px;
 }
-.parallax > div > h1 {
+
+.parallax>div>h1 {
     font-size: 56px;
     font-weight: bold;
     margin-top: 0px;
@@ -201,7 +215,8 @@ img {
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
-.parallax > div > h2 {
+
+.parallax>div>h2 {
     font-size: 28px;
     font-weight: normal;
     margin-bottom: 0px;
@@ -209,6 +224,7 @@ img {
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
+
 .parallax-short {
     /* Cannot use background-attachment: fixed with background-size: cover on smart phone */
     /* background-attachment: fixed; */
@@ -217,7 +233,8 @@ img {
     background-size: cover;
     height: 20vh;
 }
-.parallax-short > div > h2 {
+
+.parallax-short>div>h2 {
     font-size: 28px;
     font-weight: normal;
     margin: 0px;
@@ -227,38 +244,45 @@ img {
 }
 
 /* Poster */
-.poster > div {
+.poster>div {
     margin: 10px;
     max-width: 800px;
 }
-.poster > div > img, .poster > div > a > img {
+
+.poster>div>img,
+.poster>div>a>img {
     border-radius: 25px;
 }
 
 /* Poster 3 */
-.poster-3 > div {
+.poster-3>div {
     margin: 10px;
     max-width: 800px;
 }
-.poster-3 > div > div {
+
+.poster-3>div>div {
     width: calc(100% / 3);
 }
-.poster-3 > div > div:nth-child(1) > img {
+
+.poster-3>div>div:nth-child(1)>img {
     border-radius: 25px 0px 0px 25px;
 }
-.poster-3 > div > div:nth-child(2) > img {
+
+.poster-3>div>div:nth-child(2)>img {
     border-radius: 0px;
 }
-.poster-3 > div > div:nth-child(3) > img {
+
+.poster-3>div>div:nth-child(3)>img {
     border-radius: 0px 25px 25px 0px;
 }
 
 /* Profile */
-.profile > div {
+.profile>div {
     margin: 10px;
     max-width: 300px;
 }
-.profile > div > h1 {
+
+.profile>div>h1 {
     font-size: 28px;
     font-weight: normal;
     margin-top: 0px;
@@ -268,21 +292,24 @@ img {
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
-.profile > div > h2 {
+
+.profile>div>h2 {
     font-size: 22px;
     font-weight: normal;
     text-align: center;
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
-.profile > div > h3 {
+
+.profile>div>h3 {
     font-size: 16px;
     font-weight: normal;
     text-align: center;
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
-.profile > div > p {
+
+.profile>div>p {
     margin-bottom: 0px;
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
@@ -295,6 +322,7 @@ img {
     opacity: 40%;
     width: calc(100% / 3.36689476554);
 }
+
 .store-google-play {
     margin: 10px;
     min-width: 160px;
@@ -303,34 +331,35 @@ img {
 }
 
 /* YouTube */
-.youtube > div {
+.youtube>div {
     margin: 10px;
     max-width: 800px;
     width: 100%;
 }
-.youtube > div > div {
+
+.youtube>div>div {
     padding-bottom: 56.25%;
     position: relative;
 }
-.youtube > div > div > iframe {
+
+.youtube>div>div>iframe {
     border-radius: 25px;
     height: 100%;
     position: absolute;
     width: 100%;
 }
 
-/*---------------------------------------------------------------------------*/
-/* Shared class                                                              */
-/*---------------------------------------------------------------------------*/
 /* Animation */
 .animation-slide-in {
     animation: animation-slide-in 1s ease;
     will-change: animation, transform;
 }
+
 @keyframes animation-slide-in {
     0% {
         transform: translateY(-300px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -340,60 +369,74 @@ img {
 .background-image-chiang-mai {
     background-image: url(https://scidoggames.com/images/location/chiang-mai-1920x1080.webp);
 }
+
 .background-image-bangkok {
     background-image: url(https://scidoggames.com/images/location/bangkok-1920x1080.webp);
 }
+
 .background-image-cebu {
     background-image: url(https://scidoggames.com/images/location/cebu-1920x1080.webp);
 }
+
 .background-image-istanbul {
     background-image: url(https://scidoggames.com/images/location/istanbul-1920x1080.webp);
 }
+
 .background-image-swapon {
     background-image: url(https://scidoggames.com/images/games/swapon/background-1920x1080.webp);
 }
+
 .background-image-taipei {
     background-image: url(https://scidoggames.com/images/location/taipei-1920x1080.webp);
 }
 
 /* Color */
 .color-button {
-    background-color:#555555;
-    color:#eeeeee;
+    background-color: #555555;
+    color: #eeeeee;
 }
+
 .color-contact {
     background-color: #222222;
-    color:#888888;
+    color: #888888;
 }
+
 .color-copyright {
     background-color: #111111;
-    color:#888888;
+    color: #888888;
 }
+
 .color-default {
     background-color: #eeeeee;
     color: #555555;
 }
+
 .color-header {
     background-color: rgba(0, 0, 0, 0.75);
     color: #eeeeee;
 }
+
 .color-menu {
     /* background-color is changed by javascipt */
     color: #eeeeee;
 }
+
 .color-reverse {
     background-color: #555555;
     color: #eeeeee;
 }
+
 .color-swapon {
     background-color: #ffc000;
     color: #555555;
 }
+
 @media (prefers-color-scheme: dark) {
     .color-default {
         background-color: #333333;
         color: #eeeeee;
     }
+
     .color-swapon {
         background-color: #333333;
         color: #ffc000;
@@ -407,12 +450,14 @@ img {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .flex-space-around {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .flex-space-evenly {
     align-items: stretch;
     display: flex;
@@ -424,22 +469,24 @@ img {
 .padding-end {
     padding-bottom: 10px;
 }
+
 .padding-start {
     padding-top: 10px;
 }
+
 .padding-start-header {
     padding-top: 68px;
 }
+
 @media (max-width: 400px) {
     .padding-start-header {
         padding-top: 96px;
     }
 }
 
-/*---------------------------------------------------------------------------*/
-/* Font Awesome                                                              */
-/*---------------------------------------------------------------------------*/
-.fab, .fas {
+/* Font Awesome */
+.fab,
+.fas {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -448,40 +495,53 @@ img {
     text-rendering: auto;
     line-height: 1;
 }
-.fab.fa-pull-left, .fas.fa-pull-left {
+
+.fab.fa-pull-left,
+.fas.fa-pull-left {
     margin-right: 0.3em;
 }
-.fab.fa-pull-right, .fas.fa-pull-right {
+
+.fab.fa-pull-right,
+.fas.fa-pull-right {
     margin-left: 0.3em;
 }
+
 .fab {
     font-family: 'Font Awesome 5 Brands';
 }
+
 .fas {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
 }
+
 .fa-fw {
     text-align: center;
     width: 1.25em;
 }
+
 .fa-lg {
     font-size: 1.33333em;
     line-height: 0.75em;
     vertical-align: -0.0667em;
 }
+
 .fa-facebook-f:before {
     content: "\f39e";
 }
+
 .fa-twitter:before {
     content: "\f099";
 }
+
 .fa-instagram:before {
     content: "\f16d";
 }
+
 .fa-youtube:before {
     content: "\f167";
 }
+
 .fa-envelope:before {
     content: "\f0e0";
 }
