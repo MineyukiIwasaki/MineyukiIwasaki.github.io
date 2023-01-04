@@ -8,7 +8,7 @@
 | Twitter | https://twitter.com/ScidogGames |
 | Instagram | https://www.instagram.com/scidoggames |
 | YouTube | https://www.youtube.com/@ScidogGames |
-| Wikipedia | :x: |
+| Wikipedia | Please write Scidog Games on Wikipedia! |
 
 ## BIO
 ### Home Account
@@ -24,9 +24,6 @@ I'm Mineyuki and have started an indie game developer Scidog Games and I'm makin
 
 ### Introduction
 Hi, I'm Mineyuki from Japan and started indie game developer. Early next year, I'll establish our company and the Swapon will be our first game. In the past, I've worked at Bandai Namco as software engineer for twenty years and developed Tekken, Ridge Racer, Super Smash Bros. and so on. Now I'm working in Kuala Lumpur, Malaysia!
-
-## Email
-Managed at https://domains.google.com/registrar/scidoggames.com/email
 
 ## Google Analytics
 ```
@@ -50,6 +47,7 @@ Managed at https://domains.google.com/registrar/scidoggames.com/email
 ## Hosting
 | Service | URL|
 | --- | --- |
+| Email | https://domains.google.com/registrar/scidoggames.com/email |
 | GitHub Pages | https://github.com/MineyukiIwasaki/MineyukiIwasaki.github.io |
 | Google Analytics | https://analytics.google.com/analytics/web/#/report-home/a153432464w216645168p206963852 |
 | Google Domains | https://domains.google.com/registrar/scidoggames.com |
