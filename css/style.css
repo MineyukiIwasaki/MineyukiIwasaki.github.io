@@ -60,7 +60,8 @@ img {
 }
 
 .document>div>div {
-    /* color: #888888; No use for accessibility */
+    /* Cannot use for accessibility */
+    /* color: #888888; */
     font-size: 14px;
     font-weight: normal;
     margin: 14px 0px;
@@ -125,7 +126,8 @@ img {
 }
 
 .list>div>a>div {
-    /* color: #888888; No use for accessibility */
+    /* Cannot use for accessibility */
+    /* color: #888888; */
     font-size: 14px;
     font-weight: normal;
     margin: 0px;
