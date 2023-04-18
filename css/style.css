@@ -59,6 +59,16 @@ img {
     max-width: 800px;
 }
 
+.document>div>div {
+    color: #888888; /* todo */
+    font-size: 14px;
+    font-weight: normal;
+    margin: 14px 0px;
+    text-align: center;
+    /* Temporary fix for Windows */
+    transform: rotate(0.03deg);
+}
+
 .document>div>h1 {
     font-size: 28px;
     font-weight: normal;
@@ -73,15 +83,6 @@ img {
 .document>div>h2 {
     font-size: 22px;
     font-weight: normal;
-    /* Temporary fix for Windows */
-    transform: rotate(0.03deg);
-}
-
-.document>div>h3 {
-    color: #888888;
-    font-size: 14px;
-    font-weight: normal;
-    text-align: center;
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
@@ -123,20 +124,20 @@ img {
     width: 0%;
 }
 
-.list>div>a>h1 {
-    font-size: 16px;
+.list>div>a>div {
+    color: #888888; /* todo */
+    font-size: 14px;
     font-weight: normal;
-    margin: 10px 0px;
+    margin: 0px;
     text-align: center;
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
 }
 
-.list>div>a>h3 {
-    color: #888888;
-    font-size: 14px;
+.list>div>a>h1 {
+    font-size: 16px;
     font-weight: normal;
-    margin: 0px;
+    margin: 10px 0px;
     text-align: center;
     /* Temporary fix for Windows */
     transform: rotate(0.03deg);
