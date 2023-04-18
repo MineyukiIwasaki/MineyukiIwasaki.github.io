@@ -7,7 +7,7 @@ img{vertical-align:top;width:100%;height:auto;}
 .contact>div{margin:10px;}
 .copyright>div{margin:10px;transform:rotate(0.03deg);}
 .document>div{margin:10px;max-width:800px;}
-.document>div>div{color:#888888;font-size:14px;font-weight:normal;margin:14px 0px;text-align:center;transform:rotate(0.03deg);}
+.document>div>div{font-size:14px;font-weight:normal;margin:14px 0px;text-align:center;transform:rotate(0.03deg);}
 .document>div>h1{font-size:28px;font-weight:normal;margin-top:0px;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;transform:rotate(0.03deg);}
 .document>div>h2{font-size:22px;font-weight:normal;transform:rotate(0.03deg);}
 .document>div>img{border-radius:25px;}
@@ -17,7 +17,7 @@ img{vertical-align:top;width:100%;height:auto;}
 .document .button a{text-decoration:none;}
 .header{position:fixed;transition:background-color 0.5s ease;z-index:1;}
 .list>div{margin:10px;min-width:160px;width:0%;}
-.list>div>a>div{color:#888888;font-size:14px;font-weight:normal;margin:0px;text-align:center;transform:rotate(0.03deg);}
+.list>div>a>div{font-size:14px;font-weight:normal;margin:0px;text-align:center;transform:rotate(0.03deg);}
 .list>div>a>h1{font-size:16px;font-weight:normal;margin:10px 0px;text-align:center;transform:rotate(0.03deg);}
 .list>div>a>img{border-radius:25px;}
 .logo{margin:0px 10px;min-width:194.27px;width:0%;}
