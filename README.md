@@ -51,7 +51,7 @@ Hi, I'm Mineyuki from Japan and started indie game developer. Early next year, I
 | GitHub Pages | https://github.com/MineyukiIwasaki/MineyukiIwasaki.github.io |
 | Google Analytics | https://analytics.google.com/analytics/web/#/report-home/a153432464w216645168p206963852 |
 | Google Domains | https://domains.google.com/registrar/scidoggames.com |
-| Google Search Console | https://search.google.com/search-console?resource_id=https%3A%2F%2Fscidoggames.com%2F |
+| Google Search Console | https://search.google.com/search-console?resource_id=sc-domain%3Ascidoggames.com |
 | Unity app-ads.txt | https://dashboard.unity3d.com/gaming/organizations/761278/monetization/organization-settings |
 
 ## Todo
