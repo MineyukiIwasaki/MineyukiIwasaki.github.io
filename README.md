@@ -15,8 +15,8 @@
 I've started an indie game developer Scidog Games and I'm making a game while traveling all over the world as a digital nomad. (126)
 
 ### Work Account for Facebook(101), Twitter(160), Instagram(150), YouTube(1000)
-I'm Mineyuki and have started an indie game developer Scidog Games and I'm making a game. (89: Facebook)
-I've started an indie game developer Scidog Games and I'm making a lovely puzzle game Swapon for Android/iOS while traveling all over the world. (144: Twitter, Instagram)
+I'm Mineyuki and have started an indie game developer Scidog Games and I'm making a game. (89: Facebook)  
+I've started an indie game developer Scidog Games and I'm making a lovely puzzle game Swapon for Android/iOS while traveling all over the world. (144: Twitter, Instagram)  
 I'm Mineyuki and have started an indie game developer Scidog Games and I'm making a lovely puzzle game Swapon for Android/iOS while traveling all over the world as a digital nomad. Welcome YouTubers who play our games on YouTube, TikTok and Twitch. (248: YouTube)
 
 ## Google Analytics
