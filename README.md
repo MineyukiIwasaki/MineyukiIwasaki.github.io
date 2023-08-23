@@ -32,9 +32,11 @@
 ```
 
 ## HASH TAGS
-- #gamedev #indiedev #madewithunity
-- #mobilegame #indiegame #puzzlegame #madewithunity
-- #digitalnomad #chiangmai #thailand
+```
+#gamedev #indiedev #madewithunity
+#mobilegame #indiegame #puzzlegame #madewithunity
+#digitalnomad #chiangmai #thailand
+```
 
 ## HOSTING
 | Service | URL |
@@ -47,6 +49,6 @@
 | Unity app-ads.txt | https://dashboard.unity3d.com/gaming/organizations/761278/monetization/organization-settings |
 
 ## TODO
-- Change game title on bio when started to make new game for Facebook/Twitter/Instagram/YouTube
-- Change location when moved for Facebook/Twitter/YouTube and hash tag
-- Update verified account for Facebook/Twitter/Instagram/YouTube
+- Change the game title on the bio when started to make new game for Facebook/Twitter/Instagram/YouTube
+- Change the location when moved for Facebook/Twitter/YouTube and the hash tag
+- Update to verified accounts for Facebook/Twitter/Instagram/YouTube
