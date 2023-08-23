@@ -1,4 +1,4 @@
-# Scidog Games Website and SNS
+# SCIDOG GAMES WEBSITE AND SNS
 <img src="https://scidoggames.com/images/blog/our-website-is-opened/1-1920x1020.webp" width="1280">
 
 | Service | URL |
@@ -12,14 +12,14 @@
 
 ## BIO
 ### Home Account
-I've started an indie game developer Scidog Games and I'm making a game while traveling all over the world as a digital nomad. (126)
+- I've started an indie game developer Scidog Games and I'm making a game while traveling all over the world as a digital nomad. (126)
 
 ### Work Account for Facebook(101), Twitter(160), Instagram(150), YouTube(1000)
-I'm Mineyuki and have started an indie game developer Scidog Games and I'm making a game. (89: Facebook)  
-I've started an indie game developer Scidog Games and I'm making a lovely puzzle game Swapon for Android/iOS while traveling all over the world. (144: Twitter, Instagram)  
-I'm Mineyuki and have started an indie game developer Scidog Games and I'm making a lovely puzzle game Swapon for Android/iOS while traveling all over the world as a digital nomad. Welcome YouTubers who play our games on YouTube, TikTok and Twitch. (248: YouTube)
+- I'm Mineyuki and have started an indie game developer Scidog Games and I'm making a game. (89: Facebook)
+- I've started an indie game developer Scidog Games and I'm making a lovely puzzle game Swapon for Android/iOS while traveling all over the world. (144: Twitter, Instagram)
+- I'm Mineyuki and have started an indie game developer Scidog Games and I'm making a lovely puzzle game Swapon for Android/iOS while traveling all over the world as a digital nomad. Welcome YouTubers who play our games on YouTube, TikTok and Twitch. (248: YouTube)
 
-## Google Analytics
+## GOOGLE ANALYTICS
 ```
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKRKFQPQJQ"></script>
@@ -31,15 +31,13 @@ I'm Mineyuki and have started an indie game developer Scidog Games and I'm makin
 </script>
 ```
 
-## Hash Tags
-```
-#gamedev #indiedev #madewithunity
-#mobilegame #indiegame #puzzlegame #madewithunity
-#digitalnomad #chiangmai #thailand
-```
+## HASH TAGS
+- #gamedev #indiedev #madewithunity
+- #mobilegame #indiegame #puzzlegame #madewithunity
+- #digitalnomad #chiangmai #thailand
 
-## Hosting
-| Service | URL|
+## HOSTING
+| Service | URL |
 | --- | --- |
 | Email | https://domains.google.com/registrar/scidoggames.com/email |
 | GitHub Pages | https://github.com/MineyukiIwasaki/MineyukiIwasaki.github.io |
@@ -48,7 +46,7 @@ I'm Mineyuki and have started an indie game developer Scidog Games and I'm makin
 | Google Search Console | https://search.google.com/search-console?resource_id=sc-domain%3Ascidoggames.com |
 | Unity app-ads.txt | https://dashboard.unity3d.com/gaming/organizations/761278/monetization/organization-settings |
 
-## Todo
+## TODO
 - Change game title on bio when started to make new game for Facebook/Twitter/Instagram/YouTube
 - Change location when moved for Facebook/Twitter/YouTube and hash tag
 - Update verified account for Facebook/Twitter/Instagram/YouTube
