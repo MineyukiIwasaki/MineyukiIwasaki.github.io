@@ -525,9 +525,10 @@ img {
 }
 
 .fa-lg {
-    font-size: 1.33333em;
+    font-size: 1.5em;
     line-height: 0.75em;
-    vertical-align: -0.0667em;
+    margin-left: 0.05em;
+    vertical-align: -0.15em;
 }
 
 .fa-facebook:before {
