@@ -511,11 +511,11 @@ img {
 }
 
 .fab {
-    font-family: 'Font Awesome 5 Brands';
+    font-family: 'Font Awesome 6 Brands';
 }
 
 .fas {
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 6 Free';
     font-weight: 900;
 }
 
@@ -530,12 +530,12 @@ img {
     vertical-align: -0.0667em;
 }
 
-.fa-facebook-f:before {
-    content: "\f39e";
+.fa-facebook:before {
+    content: "\f09a";
 }
 
-.fa-twitter:before {
-    content: "\f099";
+.fa-x-twitter:before {
+    content: "\e61b";
 }
 
 .fa-instagram:before {
