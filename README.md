@@ -12,12 +12,12 @@
 ## SETTINGS
 ### Bio
 ```
-I'm making a voxel-based game for the NES/Famicom generation using Unity and I'm uploading the devlog on YouTube. Check it out!
+Making a voxel-based game for NES gamers using Unity. Check out Indie Game Devlog on YouTube!
 ```
-- 127 characters (Facebook: 101, X: 160, Instagram: 150, YouTube: 1000)
+- 93 characters (Facebook: 101, X: 160, Instagram: 150, YouTube: 1000)
 ### Hash Tags
 ```
-#gamedev #indiedev #voxel #unity3d #madewithunity #magicavoxel #screenshotsaturday
+#gamedev #indiedev #voxel #nes #unity3d #madewithunity #magicavoxel #screenshotsaturday
 ```
 
 ## TODO
