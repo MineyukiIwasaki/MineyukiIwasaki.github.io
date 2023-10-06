@@ -11,10 +11,10 @@
 
 ## SETTINGS
 ### Bio
+- 93 characters, Facebook: 101, X: 160, Instagram: 150, YouTube: 1000
 ```
 Making a voxel-based game for NES gamers using Unity. Check out Indie Game Devlog on YouTube!
 ```
-- 93 characters (Facebook: 101, X: 160, Instagram: 150, YouTube: 1000)
 ### Hash Tags
 ```
 #gamedev #indiedev #voxel #nes #unity3d #madewithunity #magicavoxel #screenshotsaturday
