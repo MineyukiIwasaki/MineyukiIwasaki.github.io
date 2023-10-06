@@ -18,23 +18,9 @@
 - I've started an indie game developer Scidog Games and I'm making a lovely puzzle game Swapon for Android/iOS while traveling all over the world. (144: X, Instagram)
 - I'm Mineyuki and have started an indie game developer Scidog Games and I'm making a lovely puzzle game Swapon for Android/iOS while traveling all over the world as a digital nomad. Welcome YouTubers who play our games on YouTube, TikTok and Twitch. (248: YouTube)
 
-## GOOGLE ANALYTICS
-```
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKRKFQPQJQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-PKRKFQPQJQ');
-</script>
-```
-
 ## HASH TAGS
 ```
 #gamedev #indiedev #madewithunity
-#mobilegame #indiegame #puzzlegame #madewithunity
-#digitalnomad #chiangmai #thailand
 ```
 
 ## HOSTING
@@ -48,6 +34,3 @@
 | Unity app-ads.txt | https://dashboard.unity3d.com/gaming/organizations/761278/monetization/organization-settings |
 
 ## TODO
-- Change the game title on the bio when started to make a new game for Facebook/X/Instagram/YouTube
-- Change the location when moved for Facebook/X/YouTube and the hash tag
-- Update to verified account for Facebook/X/Instagram/YouTube
