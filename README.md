@@ -21,4 +21,4 @@
 ```
 
 ## TODO
-- Update the Unity app-ads.txt at https://dashboard.unity3d.com/gaming/organizations/761278/monetization/
+- Update the Unity app-ads.txt at https://dashboard.unity3d.com/gaming/organizations/761278/monetization/organization-settings
