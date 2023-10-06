@@ -10,14 +10,11 @@
 | YouTube | https://www.youtube.com/@ScidogGames |
 
 ## SETTINGS
-### Bio for Facebook(101), X(160), Instagram(150), YouTube(1000)
-- I've started an indie game developer Scidog Games and I'm making a game while traveling all over the world as a digital nomad. (126)
-- I'm Mineyuki and have started an indie game developer Scidog Games and I'm making a game. (89: Facebook)
-- I've started an indie game developer Scidog Games and I'm making a lovely puzzle game Swapon for Android/iOS while traveling all over the world. (144: X, Instagram)
-- I'm Mineyuki and have started an indie game developer Scidog Games and I'm making a lovely puzzle game Swapon for Android/iOS while traveling all over the world as a digital nomad. Welcome YouTubers who play our games on YouTube, TikTok and Twitch. (248: YouTube)
+### Bio (Facebook: 101, X: 160, Instagram: 150, YouTube: 1000)
+- I'm making a voxel-based game for the NES/Famicom generation using Unity, and I'm uploading a devlog on YouTube. Check it out! (126)
 ### Hash Tags
 ```
-#gamedev #indiedev #madewithunity
+#gamedev #indiedev #voxel #unity3d #madewithunity #screenshotsaturday
 ```
 
 ## TODO
