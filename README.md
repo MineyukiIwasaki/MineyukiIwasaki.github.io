@@ -10,8 +10,9 @@
 | YouTube | https://www.youtube.com/@ScidogGames |
 
 ## SETTINGS
-### Bio (Facebook: 101, X: 160, Instagram: 150, YouTube: 1000)
-- I'm making a voxel-based game for the NES/Famicom generation using Unity, and I'm uploading a devlog on YouTube. Check it out! (126)
+### Bio
+- I'm making a voxel-based game for the NES/Famicom generation using Unity, and I'm uploading a devlog on YouTube. Check it out!  
+(126, Facebook: 101, X: 160, Instagram: 150, YouTube: 1000)
 ### Hash Tags
 ```
 #gamedev #indiedev #voxel #unity3d #madewithunity #screenshotsaturday
