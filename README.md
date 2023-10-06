@@ -17,7 +17,7 @@ I'm making a voxel-based game for the NES/Famicom generation using Unity and I'm
 - 127 characters (Facebook: 101, X: 160, Instagram: 150, YouTube: 1000)
 ### Hash Tags
 ```
-#gamedev #indiedev #voxel #unity3d #madewithunity #screenshotsaturday
+#gamedev #indiedev #voxel #unity3d #madewithunity #magicavoxel #screenshotsaturday
 ```
 
 ## TODO
