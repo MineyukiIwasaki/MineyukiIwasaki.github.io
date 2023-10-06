@@ -52,9 +52,9 @@ img{vertical-align:top;width:100%;height:auto;}
 .animation-slide-in{animation:animation-slide-in 1s ease;will-change:animation,transform;}
 @keyframes animation-slide-in{0%{transform:translateY(-300px);}
 100%{transform:translateY(0px);}}
-.background-image-building{background-image:url(https://scidoggames.com/images/concept-art/building-1024x1024.webp);}
-.background-image-forest{background-image:url(https://scidoggames.com/images/concept-art/forest-1024x1024.webp);}
-.background-image-sea{background-image:url(https://scidoggames.com/images/concept-art/sea-1024x1024.webp);}
+.background-image-building{background-image:url(https://scidoggames.com/images/concept-art/building-1024x576.webp);}
+.background-image-forest{background-image:url(https://scidoggames.com/images/concept-art/forest-1024x576.webp);}
+.background-image-sea{background-image:url(https://scidoggames.com/images/concept-art/sea-1024x576.webp);}
 .background-image-swapon{background-image:url(https://scidoggames.com/images/games/swapon/background-1920x1080.webp);}
 .background-image-bangkok{background-image:url(https://scidoggames.com/images/location/bangkok-1920x1080.webp);}
 .background-image-cebu{background-image:url(https://scidoggames.com/images/location/cebu-1920x1080.webp);}

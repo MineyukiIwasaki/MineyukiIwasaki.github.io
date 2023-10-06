@@ -371,15 +371,15 @@ img {
 
 /* Background Image */
 .background-image-building {
-    background-image: url(https://scidoggames.com/images/concept-art/building-1024x1024.webp);
+    background-image: url(https://scidoggames.com/images/concept-art/building-1024x576.webp);
 }
 
 .background-image-forest {
-    background-image: url(https://scidoggames.com/images/concept-art/forest-1024x1024.webp);
+    background-image: url(https://scidoggames.com/images/concept-art/forest-1024x576.webp);
 }
 
 .background-image-sea {
-    background-image: url(https://scidoggames.com/images/concept-art/sea-1024x1024.webp);
+    background-image: url(https://scidoggames.com/images/concept-art/sea-1024x576.webp);
 }
 
 .background-image-swapon {
