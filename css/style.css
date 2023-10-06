@@ -370,8 +370,20 @@ img {
 }
 
 /* Background Image */
-.background-image-chiang-mai {
-    background-image: url(https://scidoggames.com/images/location/chiang-mai-1920x1080.webp);
+.background-image-building {
+    background-image: url(https://scidoggames.com/images/concept-art/building-1024x1024.webp);
+}
+
+.background-image-forest {
+    background-image: url(https://scidoggames.com/images/concept-art/forest-1024x1024.webp);
+}
+
+.background-image-sea {
+    background-image: url(https://scidoggames.com/images/concept-art/sea-1024x1024.webp);
+}
+
+.background-image-swapon {
+    background-image: url(https://scidoggames.com/images/games/swapon/background-1920x1080.webp);
 }
 
 .background-image-bangkok {
@@ -382,12 +394,12 @@ img {
     background-image: url(https://scidoggames.com/images/location/cebu-1920x1080.webp);
 }
 
-.background-image-istanbul {
-    background-image: url(https://scidoggames.com/images/location/istanbul-1920x1080.webp);
+.background-image-chiang-mai {
+    background-image: url(https://scidoggames.com/images/location/chiang-mai-1920x1080.webp);
 }
 
-.background-image-swapon {
-    background-image: url(https://scidoggames.com/images/games/swapon/background-1920x1080.webp);
+.background-image-istanbul {
+    background-image: url(https://scidoggames.com/images/location/istanbul-1920x1080.webp);
 }
 
 .background-image-taipei {
