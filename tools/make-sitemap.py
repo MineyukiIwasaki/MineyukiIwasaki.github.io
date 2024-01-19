@@ -28,7 +28,7 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
         h.close()
 
         # Get url from html
-        url = re.search('<url> *(.*?) *</url>', html, flags=re.DOTALL).group(1)
+        url = re.search(r'<url>\s*(.*?)\s*</url>', html, flags=re.DOTALL).group(1)
 
         # Write url to sitemap
         f.write('    <url>\n')

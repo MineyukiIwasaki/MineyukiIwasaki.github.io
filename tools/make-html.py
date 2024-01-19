@@ -36,13 +36,13 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
         f.close()
 
         # Get variables from html
-        color = re.search('<color> *(.*?) *</color>', html, flags=re.DOTALL).group(1)
-        description = re.search('<description> *(.*?) *</description>', html, flags=re.DOTALL).group(1)
-        icon = re.search('<icon> *(.*?) *</icon>', html, flags=re.DOTALL).group(1)
-        image = re.search('<image> *(.*?) *</image>', html, flags=re.DOTALL).group(1)
-        parallax = re.search('<parallax> *(.*?) *</parallax>', html, flags=re.DOTALL).group(1)
-        title = re.search('<title> *(.*?) *</title>', html, flags=re.DOTALL).group(1)
-        url = re.search('<url> *(.*?) *</url>', html, flags=re.DOTALL).group(1)
+        color = re.search(r'<color>\s*(.*?)\s*</color>', html, flags=re.DOTALL).group(1)
+        description = re.search(r'<description>\s*(.*?)\s*</description>', html, flags=re.DOTALL).group(1)
+        icon = re.search(r'<icon>\s*(.*?)\s*</icon>', html, flags=re.DOTALL).group(1)
+        image = re.search(r'<image>\s*(.*?)\s*</image>', html, flags=re.DOTALL).group(1)
+        parallax = re.search(r'<parallax>\s*(.*?)\s*</parallax>', html, flags=re.DOTALL).group(1)
+        title = re.search(r'<title>\s*(.*?)\s*</title>', html, flags=re.DOTALL).group(1)
+        url = re.search(r'<url>\s*(.*?)\s*</url>', html, flags=re.DOTALL).group(1)
         year = str(datetime.datetime.now().year)
 
         # Replace html with <head>, <header> and <footer> of base html
