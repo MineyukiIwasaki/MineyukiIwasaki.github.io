@@ -66,7 +66,7 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
 
         # Setup for local environment if argv has 'local'
         if len(sys.argv) == 2 and sys.argv[1] == 'local':
-            html = re.sub('(https://scidoggames.com.*?/)\"', '\1index.html"', html)
+            html = re.sub('(https://scidoggames.com.*/)\"', r'\1index.html"', html)
             if os.name == 'nt':
                 html = re.sub('https://scidoggames.com', LOCAL_DEPLOY_PATH_WINDOWS, html)
             else:
