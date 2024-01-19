@@ -46,31 +46,31 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
         year = str(datetime.datetime.now().year)
 
         # Replace html with <head>, <header> and <footer> of base html
-        html = re.sub(r'<head>.*?<\/head>', base_head, html, flags=re.DOTALL)
-        html = re.sub(r'<header>.*?<\/header>', base_header, html, flags=re.DOTALL)
-        html = re.sub(r'<footer>.*?<\/footer>', base_footer, html, flags=re.DOTALL)
+        html = re.sub('<head>.*?<\/head>', base_head, html, flags=re.DOTALL)
+        html = re.sub('<header>.*?<\/header>', base_header, html, flags=re.DOTALL)
+        html = re.sub('<footer>.*?<\/footer>', base_footer, html, flags=re.DOTALL)
 
         # Replace html with variables
-        html = re.sub(r'__COLOR__', color, html)
-        html = re.sub(r'__DESCRIPTION__', description, html)
-        html = re.sub(r'__ICON__', icon, html)
-        html = re.sub(r'__IMAGE__', image, html)
-        html = re.sub(r'__TITLE__', title, html)
-        html = re.sub(r'__URL__', url, html)
-        html = re.sub(r'__YEAR__', year, html)
+        html = re.sub('__COLOR__', color, html)
+        html = re.sub('__DESCRIPTION__', description, html)
+        html = re.sub('__ICON__', icon, html)
+        html = re.sub('__IMAGE__', image, html)
+        html = re.sub('__TITLE__', title, html)
+        html = re.sub('__URL__', url, html)
+        html = re.sub('__YEAR__', year, html)
         if parallax == 'yes':
-            html = re.sub(r'__PARALLAX__', '', html)
+            html = re.sub('__PARALLAX__', '', html)
         else:
-            html = re.sub(r'__PARALLAX__', 'color-header', html)
-            html = re.sub(r'<script.*?javascript\.js.*?<\/script>', '', html, flags=re.DOTALL)
+            html = re.sub('__PARALLAX__', 'color-header', html)
+            html = re.sub('<script.*?javascript\.js.*?<\/script>', '', html, flags=re.DOTALL)
 
         # Setup for local environment if argv has 'local'
         if len(sys.argv) == 2 and sys.argv[1] == 'local':
-            html = re.sub(r'(https:\/\/scidoggames\.com.*?\/)\"', r'\1index.html"', html)
+            html = re.sub('(https:\/\/scidoggames\.com.*?\/)\"', '\1index.html"', html)
             if os.name == 'nt':
-                html = re.sub(r'https:\/\/scidoggames\.com', LOCAL_DEPLOY_PATH_WINDOWS, html)
+                html = re.sub('https:\/\/scidoggames\.com', LOCAL_DEPLOY_PATH_WINDOWS, html)
             else:
-                html = re.sub(r'https:\/\/scidoggames\.com', LOCAL_DEPLOY_PATH, html)
+                html = re.sub('https:\/\/scidoggames\.com', LOCAL_DEPLOY_PATH, html)
 
         # Make new path
         new_path = re.search('(https:\/\/scidoggames\.com\/)(.*)', url).group(2)
