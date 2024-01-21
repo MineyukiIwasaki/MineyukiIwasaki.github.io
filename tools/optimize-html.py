@@ -75,6 +75,7 @@ for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
             content = re.sub(r'<defs.*?\/>', '', content, flags=re.DOTALL)
             content = re.sub(r'<metadata.*?<\/metadata>', '', content, flags=re.DOTALL)
             content = re.sub(r'<sodipodi:namedview.*?<\/sodipodi:namedview>', '', content, flags=re.DOTALL)
+            content = re.sub(r'<title>.*?<\/title>', '', content, flags=re.DOTALL)
             content = re.sub(r'^\s*id=".*?"', '', content, flags=re.MULTILINE)
             content = re.sub(r'^\s*inkscape:connector-curvature=".*?"', '', content, flags=re.MULTILINE)
             content = re.sub(r'^\s*inkscape:export-filename=".*?"', '', content, flags=re.MULTILINE)
