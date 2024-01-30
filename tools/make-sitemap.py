@@ -11,7 +11,7 @@ SITEMAP_FILENAME = 'sitemap.xml'
 SOURCE_PATH = 'html'
 
 # Open sitemap
-f = open(os.path.join(DEPLOY_PATH, SITEMAP_FILENAME), 'w', encoding='utf-8')
+f = open(DEPLOY_PATH + '/' + SITEMAP_FILENAME, 'w', encoding='utf-8')
 f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
 f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
 
@@ -23,7 +23,7 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
             continue
 
         # Read html
-        h = open(os.path.join(dirpath, filename), 'r', encoding='utf-8')
+        h = open(dirpath + '/' + filename, 'r', encoding='utf-8')
         html = h.read()
         h.close()
 
@@ -38,4 +38,4 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
 # Close sitemap
 f.write('</urlset>\n')
 f.close()
-print(os.path.basename(__file__) + ': Generated ' + os.path.join(DEPLOY_PATH, SITEMAP_FILENAME) + '.')
+print(os.path.basename(__file__) + ': Generated ' + DEPLOY_PATH + '/' + SITEMAP_FILENAME + '.')

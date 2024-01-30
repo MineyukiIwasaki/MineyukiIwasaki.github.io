@@ -14,7 +14,7 @@ LOCAL_DEPLOY_PATH_WINDOWS = 'file://C:/Users/miney/Documents/Website/docs'
 SOURCE_PATH = 'html'
 
 # Read base html
-f = open(os.path.join(SOURCE_PATH, BASE_HTML_FILENAME), 'r', encoding='utf-8')
+f = open(SOURCE_PATH + '/' + BASE_HTML_FILENAME, 'r', encoding='utf-8')
 base_html = f.read()
 f.close()
 
@@ -31,7 +31,7 @@ for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
             continue
 
         # Read html
-        f = open(os.path.join(dirpath, filename), 'r', encoding='utf-8')
+        f = open(dirpath + '/' + filename, 'r', encoding='utf-8')
         html = f.read()
         f.close()
 
