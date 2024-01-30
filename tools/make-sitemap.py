@@ -17,7 +17,7 @@ f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
 
 # Find all html
 for dirpath, dirnames, filenames in os.walk(SOURCE_PATH):
-    for filename in sorted(filenames):
+    for filename in filenames:
         base, ext = os.path.splitext(filename)
         if ext != '.html' or filename == BASE_HTML_FILENAME:
             continue

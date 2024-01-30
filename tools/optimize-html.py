@@ -9,7 +9,7 @@ DEPLOY_PATH = 'docs'
 
 # Find all html, css, js, xml and svg
 for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
-    for filename in sorted(filenames):
+    for filename in filenames:
         base, ext = os.path.splitext(filename)
         if ext != '.html' and ext != '.css' and ext != '.js' and ext != '.xml' and ext != '.svg':
             continue
@@ -112,7 +112,7 @@ for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
 
 # Find all jpg or png
 for dirpath, dirnames, filenames in os.walk(DEPLOY_PATH):
-    for filename in sorted(filenames):
+    for filename in filenames:
         base, ext = os.path.splitext(filename)
         if ext != '.jpg' and ext != '.png':
             continue
