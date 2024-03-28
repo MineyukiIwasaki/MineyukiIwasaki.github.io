@@ -17,6 +17,7 @@ all:
 
 local:
 	@make clean
+	@mkdir -p $(DEPLOY_PATH)
 	@cp -fr css $(DEPLOY_PATH)
 	@cp -fr images $(DEPLOY_PATH)
 	@cp -fr js $(DEPLOY_PATH)
