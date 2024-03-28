@@ -5,7 +5,7 @@ window.addEventListener('scroll', function () {
     // Change header color
     let header = document.getElementById('header');
     if (header) {
-        if (window.pageYOffset < 50) {
+        if (window.scrollY < 50) {
             header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
         } else {
             header.style.backgroundColor = 'rgba(0, 0, 0, 0.75)';
@@ -20,21 +20,21 @@ window.addEventListener('scroll', function () {
     if (user_agent.indexOf('android') !== -1 || user_agent.indexOf('ipad') !== -1 || user_agent.indexOf('iphone') !== -1) {
         // Smart phone
         if (parallax) {
-            parallax.style.backgroundPositionY = String(0.5 * window.pageYOffset) + 'px';
+            parallax.style.backgroundPositionY = String(0.5 * window.scrollY) + 'px';
         }
     } else {
         // PC
         if (parallax) {
             parallax.style.backgroundAttachment = 'fixed';
-            parallax.style.backgroundPositionY = String(-0.5 * window.pageYOffset) + 'px';
+            parallax.style.backgroundPositionY = String(-0.5 * window.scrollY) + 'px';
         }
         if (parallax2) {
             parallax2.style.backgroundAttachment = 'fixed';
-            parallax2.style.backgroundPositionY = String(-0.5 * window.pageYOffset + 500) + 'px';
+            parallax2.style.backgroundPositionY = String(-0.5 * window.scrollY + 500) + 'px';
         }
         if (parallax3) {
             parallax3.style.backgroundAttachment = 'fixed';
-            parallax3.style.backgroundPositionY = String(-0.5 * window.pageYOffset + 900) + 'px';
+            parallax3.style.backgroundPositionY = String(-0.5 * window.scrollY + 900) + 'px';
         }
     }
 });
