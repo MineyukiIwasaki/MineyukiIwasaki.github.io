@@ -1,0 +1,92 @@
+a{color:inherit;text-decoration:none;transition:color 0.5s ease;}
+a:hover,a:active,a:focus{color:#00c0ff;}
+body{margin:0px;}
+html{background-color:black;font-family:'Ubuntu',sans-serif;}
+img{vertical-align:top;width:100%;height:auto;}
+.button{border-radius:5px;margin:0px 10px;padding:5px 10px;transform:rotate(0.03deg);}
+.contact>div{margin:10px;}
+.copyright>div{margin:10px;transform:rotate(0.03deg);}
+.document>div{margin:10px;max-width:800px;}
+.document>div>div{font-size:14px;font-weight:normal;margin:14px 0px;text-align:center;transform:rotate(0.03deg);}
+.document>div>h1{font-size:28px;font-weight:normal;margin-top:0px;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;transform:rotate(0.03deg);}
+.document>div>h2{font-size:22px;font-weight:normal;transform:rotate(0.03deg);}
+.document>div>img{border-radius:25px;}
+.document>div>p,.document>div>ol,.document>div>ul{transform:rotate(0.03deg);}
+.document>div>p:last-child{margin-bottom:0px;}
+.document a{text-decoration:underline;}
+.document .button a{text-decoration:none;}
+.header{position:fixed;transition:background-color 0.5s ease;z-index:1;}
+.list>div{margin:10px;min-width:160px;width:0%;}
+.list>div>a>div{font-size:14px;font-weight:normal;margin:0px;text-align:center;transform:rotate(0.03deg);}
+.list>div>a>h1{font-size:16px;font-weight:normal;margin:10px 0px;text-align:center;transform:rotate(0.03deg);}
+.list>div>a>img{border-radius:25px;}
+.logo{margin:0px 10px;min-width:194.27px;width:0%;}
+.menu>div{margin:10px;transform:rotate(0.03deg);}
+@media(max-width:400px){.menu>div{margin-bottom:0px;}}
+.message>div{margin:10px;max-width:800px;}
+.message>div>h1{font-size:28px;font-weight:normal;margin-top:0px;text-align:left;transform:rotate(0.03deg);}
+.message>div>h2{font-size:16px;font-weight:normal;margin-bottom:0px;text-align:right;transform:rotate(0.03deg);}
+.parallax{background-position:center;background-repeat:no-repeat;background-size:cover;height:100vh;}
+.parallax>div,.parallax-short>div{margin:10px;max-width:800px;}
+.parallax>div>h1{font-size:56px;font-weight:bold;margin-top:0px;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;transform:rotate(0.03deg);}
+.parallax>div>h2{font-size:28px;font-weight:normal;margin-bottom:0px;text-align:center;transform:rotate(0.03deg);}
+.parallax-short{background-position:center;background-repeat:no-repeat;background-size:cover;height:20vh;}
+.parallax-short>div>h2{font-size:28px;font-weight:normal;margin:0px;text-align:center;transform:rotate(0.03deg);}
+.poster>div{margin:10px;max-width:800px;}
+.poster>div>img,.poster>div>a>img{border-radius:25px;}
+.poster-3>div{margin:10px;max-width:800px;}
+.poster-3>div>div{width:calc(100%/3);}
+.poster-3>div>div:nth-child(1)>img{border-radius:25px 0px 0px 25px;}
+.poster-3>div>div:nth-child(2)>img{border-radius:0px;}
+.poster-3>div>div:nth-child(3)>img{border-radius:0px 25px 25px 0px;}
+.profile>div{margin:10px;max-width:300px;}
+.profile>div>h1{font-size:28px;font-weight:normal;margin-top:0px;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;transform:rotate(0.03deg);}
+.profile>div>h2{font-size:22px;font-weight:normal;text-align:center;transform:rotate(0.03deg);}
+.profile>div>h3{font-size:16px;font-weight:normal;text-align:center;transform:rotate(0.03deg);}
+.profile>div>p{margin-bottom:0px;transform:rotate(0.03deg);}
+.store-app-store{margin:10px;min-width:calc(160px/1.12229825518);opacity:40%;width:calc(100%/3.36689476554);}
+.store-google-play{margin:10px;min-width:160px;opacity:40%;width:calc(100%/3);}
+.youtube>div{margin:10px;max-width:800px;width:100%;}
+.youtube>div>div{padding-bottom:56.25%;position:relative;}
+.youtube>div>div>iframe{border-radius:25px;height:100%;position:absolute;width:100%;}
+.animation-slide-in{animation:animation-slide-in 1s ease;will-change:animation,transform;}
+@keyframes animation-slide-in{0%{transform:translateY(-300px);}
+100%{transform:translateY(0px);}}
+.background-image-building{background-image:url(https://scidoggames.com/images/concept-art/building-1024x576.webp);}
+.background-image-forest{background-image:url(https://scidoggames.com/images/concept-art/forest-1024x576.webp);}
+.background-image-sea{background-image:url(https://scidoggames.com/images/concept-art/sea-1024x576.webp);}
+.background-image-swapon{background-image:url(https://scidoggames.com/images/games/swapon/background-1920x1080.webp);}
+.background-image-bangkok{background-image:url(https://scidoggames.com/images/location/bangkok-1920x1080.webp);}
+.background-image-cebu{background-image:url(https://scidoggames.com/images/location/cebu-1920x1080.webp);}
+.background-image-chiang-mai{background-image:url(https://scidoggames.com/images/location/chiang-mai-1920x1080.webp);}
+.background-image-istanbul{background-image:url(https://scidoggames.com/images/location/istanbul-1920x1080.webp);}
+.background-image-taipei{background-image:url(https://scidoggames.com/images/location/taipei-1920x1080.webp);}
+.color-button{background-color:#555555;color:#eeeeee;}
+.color-contact{background-color:#222222;color:#888888;}
+.color-copyright{background-color:#111111;color:#888888;}
+.color-default{background-color:#eeeeee;color:#555555;}
+.color-header{background-color:rgba(0,0,0,0.75);color:#eeeeee;}
+.color-menu{color:#eeeeee;}
+.color-reverse{background-color:#555555;color:#eeeeee;}
+.color-swapon{background-color:#ffc000;color:#555555;}
+@media(prefers-color-scheme:dark){.color-default{background-color:#333333;color:#eeeeee;}
+.color-swapon{background-color:#333333;color:#ffc000;}}
+.flex-center{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;}
+.flex-space-around{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-around;}
+.flex-space-evenly{align-items:stretch;display:flex;flex-wrap:wrap;justify-content:space-evenly;}
+.padding-end{padding-bottom:10px;}
+.padding-start{padding-top:10px;}
+.padding-start-header{padding-top:68px;}
+@media(max-width:400px){.padding-start-header{padding-top:96px;}}
+.fab,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
+.fab.fa-pull-left,.fas.fa-pull-left{margin-right:0.3em;}
+.fab.fa-pull-right,.fas.fa-pull-right{margin-left:0.3em;}
+.fab{font-family:'Font Awesome 6 Brands';}
+.fas{font-family:'Font Awesome 6 Free';font-weight:900;}
+.fa-fw{text-align:center;width:1.25em;}
+.fa-lg{font-size:1.5em;line-height:0.75em;margin-left:0.05em;vertical-align:-0.15em;}
+.fa-facebook:before{content:"\f09a";}
+.fa-x-twitter:before{content:"\e61b";}
+.fa-instagram:before{content:"\f16d";}
+.fa-youtube:before{content:"\f167";}
+.fa-envelope:before{content:"\f0e0";}
