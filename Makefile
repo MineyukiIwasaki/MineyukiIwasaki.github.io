@@ -3,7 +3,6 @@
 DEPLOY_PATH = docs
 
 all:
-	@make clean
 	@mkdir -p $(DEPLOY_PATH)
 	@cp -fr css $(DEPLOY_PATH)
 	@cp -fr images $(DEPLOY_PATH)
@@ -16,7 +15,6 @@ all:
 	@tools/optimize-html.py
 
 local:
-	@make clean
 	@mkdir -p $(DEPLOY_PATH)
 	@cp -fr css $(DEPLOY_PATH)
 	@cp -fr images $(DEPLOY_PATH)

@@ -107,8 +107,8 @@ for root, _, files in os.walk(DEPLOY_PATH):
         f = open(file_path, 'w', encoding='utf-8')
         f.write(content)
         f.close()
-        print(f'Optimized {file_path} {len(original_content)} byte -> {len(content)} byte' + \
-            f' ({100 * len(content) / len(original_content):.2f} %)')
+        print(f'Optimized {file_path} {len(original_content) / 1000:.2f}kb -> {len(content) / 1000:.2f}kb' + \
+            f' ({100 * len(content) / len(original_content):.2f}%)')
 
 # Find all jpg or png
 for root, _, files in os.walk(DEPLOY_PATH):

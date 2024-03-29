@@ -18,7 +18,7 @@ window.addEventListener('scroll', function () {
     let parallax2 = document.getElementById('parallax2');
     let parallax3 = document.getElementById('parallax3');
     if (user_agent.indexOf('android') !== -1 || user_agent.indexOf('ipad') !== -1 || user_agent.indexOf('iphone') !== -1) {
-        // Smart phone
+        // Phone
         if (parallax) {
             parallax.style.backgroundPositionY = String(0.5 * window.scrollY) + 'px';
         }
