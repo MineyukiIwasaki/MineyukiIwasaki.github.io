@@ -4,8 +4,9 @@
 
 import os
 import re
+import sys
 
-SITEMAP_PATH = os.path.join('docs', 'sitemap.xml')
+SITEMAP_PATH = os.path.join(sys.argv[1], 'sitemap.xml')
 SOURCE_PATH = 'html'
 
 # Open sitemap

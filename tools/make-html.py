@@ -8,9 +8,9 @@ import re
 import sys
 
 BASE_HTML_FILENAME = 'base.html'
-DEPLOY_PATH = 'docs'
-LOCAL_DEPLOY_PATH = 'file:///Users/mine/Documents/Website/docs'
-LOCAL_DEPLOY_PATH_WINDOWS = 'file://C:/Users/miney/Documents/Website/docs'
+DEPLOY_PATH = sys.argv[1]
+LOCAL_DEPLOY_PATH = 'file:///Users/mine/Documents/Website/docs-local'
+LOCAL_DEPLOY_PATH_WINDOWS = 'file://C:/Users/miney/Documents/Website/docs-local'
 SOURCE_PATH = 'html'
 
 # Read base html
@@ -65,7 +65,7 @@ for root, _, files in os.walk(SOURCE_PATH):
             html = re.sub('<script.*?javascript.js.*?</script>', '', html, flags=re.DOTALL)
 
         # Setup for local environment if argv has 'local'
-        if len(sys.argv) == 2 and sys.argv[1] == 'local':
+        if len(sys.argv) == 2 and sys.argv[1] == 'docs-local':
             html = re.sub('(https://scidoggames.com.*/)"', r'\1index.html"', html)
             if os.name == 'nt':
                 html = re.sub('https://scidoggames.com', LOCAL_DEPLOY_PATH_WINDOWS, html)
