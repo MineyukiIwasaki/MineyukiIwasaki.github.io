@@ -15,16 +15,16 @@ for root, _, files in os.walk(DEPLOY_PATH):
         if ext != '.html' and ext != '.css' and ext != '.js' and ext != '.xml' and ext != '.svg':
             continue
 
-        # Read html, css, js, xml or svg
+        # Read html, css, js, xml and svg
         file_path = os.path.join(root, file)
         f = open(file_path, 'r', encoding='utf-8')
         original_content = f.read()
         f.close()
 
-        # Optimize html or xml
+        # Optimize html and xml
         if ext == '.html' or ext == '.xml':
             # Remove comments
-            content = re.sub(r'<!\-\-.*?\-\->', '', original_content, flags=re.DOTALL)
+            content = re.sub(r'<!--.*?-->', '', original_content, flags=re.DOTALL)
             # Remove spaces
             content = re.sub(r' +', ' ', content)
             content = re.sub(r'^\s+', '', content, flags=re.MULTILINE)
@@ -32,14 +32,14 @@ for root, _, files in os.walk(DEPLOY_PATH):
         # Optimize css
         if ext == '.css':
             # Remove comments
-            content = re.sub(r'\/\*.*?\*\/', '', original_content, flags=re.DOTALL)
+            content = re.sub(r'/\*.*?\*/', '', original_content, flags=re.DOTALL)
             # Remove spaces
             content = re.sub(r' +', ' ', content)
             content = re.sub(r'^\s+', '', content, flags=re.MULTILINE)
             content = re.sub(r'\s*\+\s*', '+', content)
             content = re.sub(r'\s*\-\s*', '-', content)
             content = re.sub(r'\s*\*\s*', '*', content)
-            content = re.sub(r'\s*\/\s*', '/', content)
+            content = re.sub(r'\s*/\s*', '/', content)
             content = re.sub(r'\s*,\s*', ',', content)
             content = re.sub(r'\s*:\s*', ':', content)
             content = re.sub(r'\s*;\s*', ';', content)
@@ -51,8 +51,8 @@ for root, _, files in os.walk(DEPLOY_PATH):
         # Optimize js
         if ext == '.js':
             # Remove comments
-            content = re.sub(r'\/\*.*?\*\/', '', original_content, flags=re.DOTALL)
-            content = re.sub(r'\/\/.*$', '', content, flags=re.MULTILINE)
+            content = re.sub(r'/\*.*?\*/', '', original_content, flags=re.DOTALL)
+            content = re.sub(r'//.*$', '', content, flags=re.MULTILINE)
             # Remove spaces
             content = re.sub(r' +', ' ', content)
             content = re.sub(r'^\s+', '', content, flags=re.MULTILINE)
@@ -62,7 +62,7 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub(r'\s*\+\s*', '+', content)
             content = re.sub(r'\s*\-\s*', '-', content)
             content = re.sub(r'\s*\*\s*', '*', content)
-            content = re.sub(r'\s*\/\s*', '/', content)
+            content = re.sub(r'\s*/\s*', '/', content)
             content = re.sub(r'\s*,\s*', ',', content)
             content = re.sub(r'\s*; *', ';', content)
             content = re.sub(r'\s*\(\s*', '(', content)
@@ -74,10 +74,10 @@ for root, _, files in os.walk(DEPLOY_PATH):
         if ext == '.svg':
             # Remove unused elements
             content = re.sub(r'<\?xml.*?\?>', '', original_content, flags=re.DOTALL)
-            content = re.sub(r'<defs.*?\/>', '', content, flags=re.DOTALL)
-            content = re.sub(r'<metadata.*?<\/metadata>', '', content, flags=re.DOTALL)
-            content = re.sub(r'<sodipodi:namedview.*?<\/sodipodi:namedview>', '', content, flags=re.DOTALL)
-            content = re.sub(r'<title>.*?<\/title>', '', content, flags=re.DOTALL)
+            content = re.sub(r'<defs.*?/>', '', content, flags=re.DOTALL)
+            content = re.sub(r'<metadata.*?</metadata>', '', content, flags=re.DOTALL)
+            content = re.sub(r'<sodipodi:namedview.*?</sodipodi:namedview>', '', content, flags=re.DOTALL)
+            content = re.sub(r'<title>.*?</title>', '', content, flags=re.DOTALL)
             content = re.sub(r'^\s*id=".*?"', '', content, flags=re.MULTILINE)
             content = re.sub(r'^\s*inkscape:connector-curvature=".*?"', '', content, flags=re.MULTILINE)
             content = re.sub(r'^\s*inkscape:export-filename=".*?"', '', content, flags=re.MULTILINE)
@@ -100,25 +100,25 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub(r'<', '\n<', content)
             content = re.sub(r'>', '>\n', content)
             content = re.sub(r'\s*> *', '>', content)
-            content = re.sub(r'\s*\/> *', '/>', content)
+            content = re.sub(r'\s*/> *', '/>', content)
             content = re.sub(r' +', ' ', content)
             content = re.sub(r'^\s+', '', content, flags=re.MULTILINE)
 
-        # Write html, css, js, xml or svg
+        # Write html, css, js, xml and svg
         f = open(file_path, 'w', encoding='utf-8')
         f.write(content)
         f.close()
         print(f'Optimized {file_path} {len(original_content) / 1000:.2f}kb -> {len(content) / 1000:.2f}kb' + \
             f' ({100 * len(content) / len(original_content):.2f}%)')
 
-# Find all jpg or png
+# Find all jpg and png
 for root, _, files in os.walk(DEPLOY_PATH):
     for file in files:
         base, ext = os.path.splitext(file)
         if ext != '.jpg' and ext != '.png':
             continue
 
-        # Remove jpg or png
+        # Remove jpg and png
         file_path = os.path.join(root, file)
         os.remove(file_path)
         print(f'Removed {file_path}')
