@@ -28,6 +28,6 @@ f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
 f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
 for url in urls:
     f.write(f'<url><loc>{url}</loc></url>\n')
-f.write('</urlset>\n')
+f.write('</urlset>')
 f.close()
 print(f'Generated {SITEMAP_PATH}')

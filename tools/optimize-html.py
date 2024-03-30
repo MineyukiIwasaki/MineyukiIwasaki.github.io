@@ -32,6 +32,7 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub('> ', '>', content)
             content = re.sub('>', '>\n', content)
             content = re.sub('>\n(.+?)<', r'>\1<', content)
+            content = re.sub('\n$', '', content)
             # Remove empty tags
             content = re.sub('<h[1-6]{1}>\n</h[1-6]{1}>\n', '', content)
             content = re.sub('<div>\n</div>\n', '', content)
@@ -54,48 +55,54 @@ for root, _, files in os.walk(DEPLOY_PATH):
         # Optimize css
         if ext == '.css':
             # Remove comments
-            content = re.sub('/\*.*?\*/', '', original_content, flags=re.DOTALL)
+            content = re.sub(r'/\*.*?\*/', '', original_content, flags=re.DOTALL)
             # Remove spaces
             content = re.sub('\n', ' ', content)
             content = re.sub(' +', ' ', content)
-            content = re.sub(' *\( *', '(', content)
-            content = re.sub(' *\) *', ')', content)
+            content = re.sub(r' *\( *', '(', content)
+            content = re.sub(r' *\) *', ')', content)
             content = re.sub(' *, *', ',', content)
-            content = re.sub(' *\/ *', '/', content)
+            content = re.sub(r' *\/ *', '/', content)
             content = re.sub(' *: *', ':', content)
             content = re.sub(' *; *', ';', content)
             content = re.sub(' *@ *', '@', content)
             content = re.sub(' *{ *', '{', content)
             content = re.sub(' *} *', '}', content)
             content = re.sub('}', '}\n', content)
+            content = re.sub('^ +', '', content)
+            content = re.sub('\n$', '', content)
             # Specific cases
             content = re.sub('@(.+?){(.+?){(.+?)}\n}\n', r'@\1{\2{\3}}\n', content)
             content = re.sub('@(.+?){(.+?){(.+?)}\n(.+?){(.+?)}\n}\n', r'@\1{\2{\3}\4{\5}}\n', content)
-
-#@keyframes animation-slide-in{0%{transform:translateY(-300px);}
-#100%{transform:translateY(0px);}}
 
         # Optimize js
         if ext == '.js':
             # Remove comments
             content = re.sub(r'/\*.*?\*/', '', original_content, flags=re.DOTALL)
-            content = re.sub(r'//.*$', '', content, flags=re.MULTILINE)
+            content = re.sub('//.*?\n', '', content)
             # Remove spaces
-            content = re.sub(r' +', ' ', content)
-            content = re.sub(r'^\s+', '', content, flags=re.MULTILINE)
-            content = re.sub(r'\s*=\s*', '=', content)
-            content = re.sub(r'\s*<\s*', '<', content)
-            content = re.sub(r'\s*>\s*', '>', content)
-            content = re.sub(r'\s*\+\s*', '+', content)
-            content = re.sub(r'\s*\-\s*', '-', content)
-            content = re.sub(r'\s*\*\s*', '*', content)
-            content = re.sub(r'\s*/\s*', '/', content)
-            content = re.sub(r'\s*,\s*', ',', content)
-            content = re.sub(r'\s*; *', ';', content)
-            content = re.sub(r'\s*\(\s*', '(', content)
-            content = re.sub(r'\s*\)\s*', ')', content)
-            content = re.sub(r' *\{ *', '{', content)
-            content = re.sub(r' *\} *', '}', content)
+            content = re.sub('\n', ' ', content)
+            content = re.sub(' +', ' ', content)
+
+            content = re.sub(' *& *', '&', content)
+            content = re.sub(r' *\( *', '(', content)
+            content = re.sub(r' *\) *', ')', content)
+            content = re.sub(r' *\* *', '*', content)
+            content = re.sub(r' *\+ *', '+', content)
+            content = re.sub(' *, *', ',', content)
+            content = re.sub(' *- *', '-', content)
+            content = re.sub(r' *\/ *', '/', content)
+            content = re.sub(' *; *', ';', content)
+            content = re.sub(' *< *', '<', content)
+            content = re.sub(' *= *', '=', content)
+            content = re.sub(' *> *', '>', content)
+            content = re.sub(' *{ *', '{', content)
+            content = re.sub(r' *\| *', '|', content)
+            content = re.sub(' *} *', '}', content)
+
+            content = re.sub(';', ';\n', content)
+            content = re.sub('{', '{\n', content)
+            content = re.sub('}', '}', content)
 
         # Optimize svg
         if ext == '.svg':
