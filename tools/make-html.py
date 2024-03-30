@@ -25,24 +25,24 @@ base_footer = re.search('<footer>.*?</footer>', base_html, flags=re.DOTALL).grou
 
 # Find all html
 for root, _, files in os.walk(SOURCE_PATH):
-    for filename in files:
-        base, ext = os.path.splitext(filename)
-        if ext != '.html' or filename == BASE_HTML_FILENAME:
+    for file in files:
+        base, ext = os.path.splitext(file)
+        if ext != '.html' or file == BASE_HTML_FILENAME:
             continue
 
         # Read html
-        f = open(os.path.join(root, filename), 'r', encoding='utf-8')
+        f = open(os.path.join(root, file), 'r', encoding='utf-8')
         html = f.read()
         f.close()
 
         # Get variables from html
-        color = re.search(r'<color>\s*(.*?)\s*</color>', html, flags=re.DOTALL).group(1)
-        description = re.search(r'<description>\s*(.*?)\s*</description>', html, flags=re.DOTALL).group(1)
-        icon = re.search(r'<icon>\s*(.*?)\s*</icon>', html, flags=re.DOTALL).group(1)
-        image = re.search(r'<image>\s*(.*?)\s*</image>', html, flags=re.DOTALL).group(1)
-        parallax = re.search(r'<parallax>\s*(.*?)\s*</parallax>', html, flags=re.DOTALL).group(1)
-        title = re.search(r'<title>\s*(.*?)\s*</title>', html, flags=re.DOTALL).group(1)
-        url = re.search(r'<url>\s*(.*?)\s*</url>', html, flags=re.DOTALL).group(1)
+        color = re.search('<color> *(.*?) *</color>', html).group(1)
+        description = re.search('<description> *(.*?) *</description>', html).group(1)
+        icon = re.search('<icon> *(.*?) *</icon>', html).group(1)
+        image = re.search('<image> *(.*?) *</image>', html).group(1)
+        parallax = re.search('<parallax> *(.*?) *</parallax>', html).group(1)
+        title = re.search('<title> *(.*?) *</title>', html).group(1)
+        url = re.search('<url> *(.*?) *</url>', html).group(1)
         year = str(datetime.datetime.now().year)
 
         # Replace html with <head>, <header> and <footer> of base html
@@ -62,7 +62,7 @@ for root, _, files in os.walk(SOURCE_PATH):
             html = re.sub('__PARALLAX__', '', html)
         else:
             html = re.sub('__PARALLAX__', 'color-header', html)
-            html = re.sub('<script.*?javascript.js.*?</script>', '', html, flags=re.DOTALL)
+            html = re.sub('<script.*?javascript.js.*?</script>', '', html)
 
         # Setup for local environment if argv has 'local'
         if len(sys.argv) == 2 and sys.argv[1] == 'docs-local':
