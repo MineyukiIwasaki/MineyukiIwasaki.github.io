@@ -30,18 +30,19 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub(' +', ' ', content)
             content = re.sub(' <', '<', content)
             content = re.sub('> ', '>', content)
-
             content = re.sub('>', '>\n', content)
             content = re.sub('>\n(.+?)<', r'>\1<', content)
 
-            #content = re.sub('\n</i>', '</i>', content)
-            #content = re.sub('\n</iframe>', '</iframe>', content)
-            #content = re.sub('\n</script>', '</script>', content)
-            #content = re.sub('(<h[1-6]{1}>)\n', r'\1', content)
-            #content = re.sub('\n(</h[1-6]{1}>)', r'\1', content)
-
-            #content = re.sub(r' +', ' ', content)
-            #content = re.sub(r'^\s+', '', content, flags=re.MULTILINE)
+            content = re.sub('(<h[1-6]{1}>)\n', r'\1', content)
+            content = re.sub('\n(</h[1-6]{1}>)', r'\1', content)
+            content = re.sub('<h[1-6]{1}></h[1-6]{1}>', '', content)
+            content = re.sub('\n</i>', '</i>', content)
+            content = re.sub('\n</iframe>', '</iframe>', content)
+            content = re.sub('<li>\n', '<li>', content)
+            content = re.sub('\n</li>', '</li>', content)
+            content = re.sub('\n</script>', '</script>', content)
+            content = re.sub('<url>\n', '<url>', content)
+            content = re.sub('\n</url>', '</url>', content)
 
         # Optimize css
         if ext == '.css':
