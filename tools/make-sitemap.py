@@ -19,7 +19,7 @@ for root, _, files in os.walk(SOURCE_PATH):
         f = open(os.path.join(root, file), 'r', encoding='utf-8')
         html = f.read()
         f.close()
-        urls.append(re.search(r'<url>\s*(.*?)\s*</url>', html).group(1))
+        urls.append(re.search(r'<url> *(.*?) *</url>', html).group(1))
 urls.sort()
 
 # Make sitemap

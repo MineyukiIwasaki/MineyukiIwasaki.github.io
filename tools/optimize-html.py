@@ -83,7 +83,6 @@ for root, _, files in os.walk(DEPLOY_PATH):
             # Remove spaces
             content = re.sub('\n', ' ', content)
             content = re.sub(' +', ' ', content)
-
             content = re.sub(' *& *', '&', content)
             content = re.sub(r' *\( *', '(', content)
             content = re.sub(r' *\) *', ')', content)
@@ -99,10 +98,11 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub(' *{ *', '{', content)
             content = re.sub(r' *\| *', '|', content)
             content = re.sub(' *} *', '}', content)
-
-            content = re.sub(';', ';\n', content)
-            content = re.sub('{', '{\n', content)
-            content = re.sub('}', '}', content)
+            content = re.sub('else', '\nelse', content)
+            content = re.sub('if', '\nif', content)
+            content = re.sub('let', '\nlet', content)
+            content = re.sub('^ +', '', content)
+            content = re.sub('\n$', '', content)
 
         # Optimize svg
         if ext == '.svg':
