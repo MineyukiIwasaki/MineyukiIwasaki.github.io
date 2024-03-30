@@ -8,11 +8,11 @@ import sys
 
 DEPLOY_PATH = sys.argv[1]
 
-# Find all html, css, js, xml and svg
+# Find all html, css, js and svg
 for root, _, files in os.walk(DEPLOY_PATH):
     for file in files:
         base, ext = os.path.splitext(file)
-        if ext != '.html' and ext != '.css' and ext != '.js' and ext != '.xml' and ext != '.svg':
+        if ext != '.html' and ext != '.css' and ext != '.js' and ext != '.svg':
             continue
 
         # Read html, css, js, xml and svg
@@ -21,8 +21,8 @@ for root, _, files in os.walk(DEPLOY_PATH):
         original_content = f.read()
         f.close()
 
-        # Optimize html and xml
-        if ext == '.html' or ext == '.xml':
+        # Optimize html
+        if ext == '.html':
             # Remove comments
             content = re.sub('<!--.*?-->', '', original_content, flags=re.DOTALL)
             # Remove spaces
@@ -33,16 +33,20 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub('>', '>\n', content)
             content = re.sub('>\n(.+?)<', r'>\1<', content)
 
-            content = re.sub('(<h[1-6]{1}>)\n', r'\1', content)
-            content = re.sub('\n(</h[1-6]{1}>)', r'\1', content)
-            content = re.sub('<h[1-6]{1}></h[1-6]{1}>', '', content)
             content = re.sub('\n</i>', '</i>', content)
             content = re.sub('\n</iframe>', '</iframe>', content)
+            content = re.sub('\n</script>', '</script>', content)
+            content = re.sub('(<h[1-6]{1}>)\n', r'\1', content)
+            content = re.sub('\n(</h[1-6]{1}>)', r'\1', content)
             content = re.sub('<li>\n', '<li>', content)
             content = re.sub('\n</li>', '</li>', content)
-            content = re.sub('\n</script>', '</script>', content)
             content = re.sub('<url>\n', '<url>', content)
             content = re.sub('\n</url>', '</url>', content)
+            content = re.sub('<h[1-6]{1}></h[1-6]{1}>', '', content)
+            # Remove script spaces
+            match = re.search('<script>.+?</script>', content).group(0)
+            match = match.replace(' ','').replace('function', 'function ').replace('new', 'new ')
+            content = re.sub('<script>.+?</script>', match, content)
 
         # Optimize css
         if ext == '.css':
