@@ -15,7 +15,7 @@ for root, _, files in os.walk(DEPLOY_PATH):
         if ext != '.html' and ext != '.css' and ext != '.js' and ext != '.svg':
             continue
 
-        # Read html, css, js, xml and svg
+        # Read html, css, js and svg
         file_path = os.path.join(root, file)
         f = open(file_path, 'r', encoding='utf-8')
         original_content = f.read()
@@ -32,7 +32,10 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub('> ', '>', content)
             content = re.sub('>', '>\n', content)
             content = re.sub('>\n(.+?)<', r'>\1<', content)
-            # Remove spaces for specific cases
+            # Remove empty tags
+            content = re.sub('<h[1-6]{1}>\n</h[1-6]{1}>\n', '', content)
+            content = re.sub('<div>\n</div>\n', '', content)
+            # Force inline
             content = re.sub('\n</i>', '</i>', content)
             content = re.sub('\n</iframe>', '</iframe>', content)
             content = re.sub('\n</script>', '</script>', content)
@@ -40,15 +43,13 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub('\n(</h[1-6]{1}>)', r'\1', content)
             content = re.sub('<li>\n', '<li>', content)
             content = re.sub('\n</li>', '</li>', content)
-            content = re.sub('<url>\n', '<url>', content)
-            content = re.sub('\n</url>', '</url>', content)
-            content = re.sub('<h[1-6]{1}></h[1-6]{1}>', '', content)
-            match = re.search('<script>.+?</script>', content).group(0).replace(' ', '').replace('function', 'function ').replace('new', 'new ')
-            content = re.sub('<script>.+?</script>', match, content)
-            match = re.search('<meta name="viewport" content=".+?">', content).group(0).replace(', ', ',')
-            content = re.sub('<meta name="viewport" content=".+?">', match, content)
+            # Specific cases
             match = re.search('<link rel="preload" .+? onload=".+?">', content).group(0).replace('; ', ';')
             content = re.sub('<link rel="preload" .+? onload=".+?">', match, content)
+            match = re.search('<meta name="viewport" content=".+?">', content).group(0).replace(', ', ',')
+            content = re.sub('<meta name="viewport" content=".+?">', match, content)
+            match = re.search('<script>.+?</script>', content).group(0).replace(' ', '').replace('function', 'function ').replace('new', 'new ')
+            content = re.sub('<script>.+?</script>', match, content)
 
         # Optimize css
         if ext == '.css':
