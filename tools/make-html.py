@@ -65,7 +65,7 @@ for root, _, files in os.walk(SOURCE_PATH):
             html = re.sub('<script.*?javascript.js.*?</script>', '', html)
 
         # Setup for local environment if argv has 'local'
-        if len(sys.argv) == 2 and sys.argv[1] == 'docs-local':
+        if sys.argv[1] == 'docs-local':
             html = re.sub('(https://scidoggames.com.*/)"', r'\1index.html"', html)
             if os.name == 'nt':
                 html = re.sub('https://scidoggames.com', LOCAL_DEPLOY_PATH_WINDOWS, html)

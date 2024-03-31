@@ -28,6 +28,9 @@ release:
 	@tools/make-sitemap.py docs
 	@tools/optimize-html.py docs
 
+check:
+	@tools/check-link.py docs
+
 clean:
 	@rm -fr docs-local
 	@rm -fr docs
