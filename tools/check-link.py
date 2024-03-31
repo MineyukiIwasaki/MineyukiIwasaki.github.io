@@ -19,9 +19,9 @@ for root, _, files in os.walk(DEPLOY_PATH):
         if ext.lower() not in EXTENSIONS:
             continue
         f = open(os.path.join(root, file), 'r', encoding='utf-8')
-        html = f.read()
+        content = f.read()
         f.close()
-        for match in re.finditer('["(>]{1}(http.*?)[")<]{1}', html):
+        for match in re.finditer('["(>]{1}(http.*?)[")<]{1}', content):
             if match.group(1) in PRECONNECTS:
                 continue
             urls.append(match.group(1))
