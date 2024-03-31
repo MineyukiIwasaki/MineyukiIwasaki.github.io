@@ -7,9 +7,9 @@ a {
     transition: color 0.5s ease;
 }
 
-a:hover,
 a:active,
-a:focus {
+a:focus,
+a:hover {
     color: #00c0ff;
 }
 
@@ -28,8 +28,8 @@ html {
 img {
     /* Remove unexpected space */
     vertical-align: top;
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 /* Button */
@@ -329,6 +329,10 @@ img {
 }
 
 /* Background Image */
+.background-image-swapon {
+    background-image: url(https://scidoggames.com/images/games/swapon/background-1920x1080.webp);
+}
+
 .background-image-building {
     background-image: url(https://scidoggames.com/images/concept-art/building-1024x576.webp);
 }
@@ -339,10 +343,6 @@ img {
 
 .background-image-sea {
     background-image: url(https://scidoggames.com/images/concept-art/sea-1024x576.webp);
-}
-
-.background-image-swapon {
-    background-image: url(https://scidoggames.com/images/games/swapon/background-1920x1080.webp);
 }
 
 .background-image-bangkok {
@@ -487,8 +487,8 @@ img {
     display: inline-block;
     font-style: normal;
     font-variant: normal;
-    text-rendering: auto;
     line-height: 1;
+    text-rendering: auto;
 }
 
 .fab.fa-pull-left,
