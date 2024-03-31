@@ -45,6 +45,7 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub('<li>\n', '<li>', content)
             content = re.sub('\n</li>', '</li>', content)
             # Specific cases
+            content = re.sub('<p>(.+?)<a href(.*?)</a>(.+?)</p>', r'<p>\1 <a href\2</a> \3</p>', content)
             match = re.search('<meta name="viewport" content=".*?">', content).group(0).replace(', ', ',')
             content = re.sub('<meta name="viewport" content=".*?">', match, content)
             match = re.search('<script>.*?</script>', content).group(0).replace(' ', '').replace('function', 'function ').replace('new', 'new ')
