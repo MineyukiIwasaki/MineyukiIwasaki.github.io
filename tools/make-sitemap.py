@@ -6,20 +6,20 @@ import os
 import re
 import sys
 
-SITEMAP_PATH = os.path.join(sys.argv[1], 'sitemap.xml')
-SOURCE_PATH = 'html'
+DEPLOY_PATH = sys.argv[1]
+SITEMAP_PATH = os.path.join(DEPLOY_PATH, 'sitemap.xml')
 
 # Find all URLs
 urls = []
-for root, _, files in os.walk(SOURCE_PATH):
+for root, _, files in os.walk(DEPLOY_PATH):
     for file in files:
         base, ext = os.path.splitext(file)
-        if ext != '.html' or file == 'base.html':
+        if ext != '.html':
             continue
         f = open(os.path.join(root, file), 'r', encoding='utf-8')
         html = f.read()
         f.close()
-        urls.append(re.search(r'<url> *(.*?) *</url>', html).group(1))
+        urls.append(re.search('<link rel="canonical" href="(.*?)">', html).group(1))
 urls.sort()
 
 # Make sitemap
