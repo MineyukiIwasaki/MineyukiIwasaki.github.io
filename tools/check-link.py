@@ -7,9 +7,9 @@ import re
 import requests
 import sys
 
+DEPLOY_PATH = sys.argv[1]
 EXTENSIONS = ('.css', '.html', '.js', '.svg', '.xml')
 PRECONNECTS = ('https://fonts.gstatic.com', 'https://use.fontawesome.com')
-DEPLOY_PATH = sys.argv[1]
 
 # Find all URLs
 urls = []
@@ -21,18 +21,18 @@ for root, _, files in os.walk(DEPLOY_PATH):
         f = open(os.path.join(root, file), 'r', encoding='utf-8')
         html = f.read()
         f.close()
-        for match in re.finditer(r'[>\(\'"]{1}(http.*?)[<\)\'"]{1}', html):
+        for match in re.finditer('["(>]{1}(http.*?)[")<]{1}', html):
+            if match.group(1) in PRECONNECTS:
+                continue
             urls.append(match.group(1))
 urls = list(dict.fromkeys(urls))
 urls.sort()
 
-# Make sitemap
+# Check all URLs
 for url in urls:
-    if url in PRECONNECTS:
-        continue
     try:
         response = requests.head(url, allow_redirects=True)
         response.raise_for_status()
-        print(f'OK {url}')
+        print(f'Connected {url}')
     except requests.exceptions.RequestException:
-        print(f'NG {url}')
+        print(f'Error {url}')
