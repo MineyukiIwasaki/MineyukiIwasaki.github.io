@@ -9,7 +9,7 @@ import sys
 
 DEPLOY_PATH = sys.argv[1]
 EXTENSIONS = ('.css', '.html', '.js', '.svg', '.xml')
-PRECONNECTS = ('https://fonts.gstatic.com', 'https://use.fontawesome.com')
+PRECONNECTS = ('https://fonts.googleapis.com', 'https://fonts.gstatic.com')
 
 # Find all URLs
 urls = []

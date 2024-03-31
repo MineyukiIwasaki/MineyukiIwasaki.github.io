@@ -45,8 +45,6 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub('<li>\n', '<li>', content)
             content = re.sub('\n</li>', '</li>', content)
             # Specific cases
-            match = re.search('<link rel="preload" .*? onload=".*?">', content).group(0).replace('; ', ';')
-            content = re.sub('<link rel="preload" .*? onload=".*?">', match, content)
             match = re.search('<meta name="viewport" content=".*?">', content).group(0).replace(', ', ',')
             content = re.sub('<meta name="viewport" content=".*?">', match, content)
             match = re.search('<script>.*?</script>', content).group(0).replace(' ', '').replace('function', 'function ').replace('new', 'new ')
