@@ -23,7 +23,7 @@ window.addEventListener('scroll', function () {
             parallax.style.backgroundPositionY = String(0.5 * window.scrollY) + 'px';
         }
         if (parallax2) {
-            parallax.style.backgroundPositionY = String(0.5 * window.scrollY) + 'px';
+            parallax2.style.backgroundPositionY = String(0.5 * window.scrollY) + 'px';
         }
     } else {
         // PC
