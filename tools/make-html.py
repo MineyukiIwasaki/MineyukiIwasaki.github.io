@@ -64,31 +64,31 @@ for root, _, files in os.walk(SOURCE_PATH):
             html = re.sub('__PARALLAX__', 'color-header', html)
             html = re.sub('<script.*?javascript.js.*?</script>', '', html)
 
-        # Setup for local environment if argv has 'local'
+        # Setup for local environment
         if sys.argv[1] == 'docs-local':
-            html = re.sub('(https://scidoggames.com.*/)"', r'\1index.html"', html)
+            html = re.sub('"(https://scidoggames.com.*/)"', r'"\1index.html"', html)
             if os.name == 'nt':
-                html = re.sub('https://scidoggames.com', LOCAL_DEPLOY_PATH_WINDOWS, html)
+                html = re.sub('"https://scidoggames.com', f'"{LOCAL_DEPLOY_PATH_WINDOWS}', html)
             else:
-                html = re.sub('https://scidoggames.com', LOCAL_DEPLOY_PATH, html)
+                html = re.sub('"https://scidoggames.com', f'"{LOCAL_DEPLOY_PATH}', html)
 
-        # Make new path
-        new_path = re.search('https://scidoggames.com/(.*)', url).group(1)
-
-        # Add 'index.html' to new path if not contain '.html'
-        m = re.search('.*.html', new_path)
-        if not m:
-            new_path = new_path + 'index.html'
+        # Make file path
+        file_path = re.search('https://scidoggames.com/(.*)', url).group(1)
+        if not re.search('.html', url):
+            file_path += 'index.html'
+        if os.name == 'nt':
+            file_path = file_path.replace('/', '\\')
+        file_path = os.path.join(DEPLOY_PATH, file_path)
 
         # Make directory if not exist
-        m = re.search('(.*)/', new_path)
-        if m:
-            new_dirpath = os.path.join(DEPLOY_PATH, m.group(1))
-            if not os.path.exists(new_dirpath):
-                os.makedirs(new_dirpath)
+        match = re.search('https://scidoggames.com/(.*)/.*', url)
+        if match:
+            dir_path = os.path.join(DEPLOY_PATH, match.group(1))
+            if not os.path.exists(dir_path):
+                os.makedirs(dir_path)
 
         # Write html
-        f = open(os.path.join(DEPLOY_PATH, new_path), 'w', encoding='utf-8')
+        f = open(file_path, 'w', encoding='utf-8')
         f.write(html)
         f.close()
-        print(f'Generated {os.path.join(DEPLOY_PATH, new_path)}')
+        print(f'Generated {file_path}')
