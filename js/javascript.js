@@ -19,6 +19,7 @@ window.addEventListener('scroll', function () {
     let parallax3 = document.getElementById('parallax3');
     if (user_agent.indexOf('android') !== -1 || user_agent.indexOf('ipad') !== -1 || user_agent.indexOf('iphone') !== -1) {
         // Phone
+        // Cannot use background-attachment: fixed with background-size: cover
         if (parallax) {
             parallax.style.backgroundPositionY = String(0.5 * window.scrollY) + 'px';
         }
