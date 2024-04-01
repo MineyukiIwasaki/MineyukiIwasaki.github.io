@@ -72,20 +72,21 @@ for root, _, files in os.walk(SOURCE_PATH):
             else:
                 html = re.sub('"https://scidoggames.com', f'"{LOCAL_DEPLOY_PATH}', html)
 
-        # Make file path
-        file_path = re.search('https://scidoggames.com/(.*)', url).group(1)
-        if not re.search('.html', url):
-            file_path += 'index.html'
+        # Make file path and dir path
+        path = re.search('https://scidoggames.com/(.*)', url).group(1)
+        path = os.path.join(DEPLOY_PATH, path)
         if os.name == 'nt':
-            file_path = file_path.replace('/', '\\')
-        file_path = os.path.join(DEPLOY_PATH, file_path)
+            path = path.replace('/', '\\')
+        if re.search('.html', path):
+            dir_path = re.sub(r'([/\\]).*.html', r'\1', path)
+            file_path = path
+        else:
+            dir_path = path
+            file_path = f'{path}index.html'
 
         # Make directory if not exist
-        match = re.search('https://scidoggames.com/(.*)/.*', url)
-        if match:
-            dir_path = os.path.join(DEPLOY_PATH, match.group(1))
-            if not os.path.exists(dir_path):
-                os.makedirs(dir_path)
+        if not os.path.exists(dir_path):
+            os.makedirs(dir_path)
 
         # Write html
         f = open(file_path, 'w', encoding='utf-8')
