@@ -83,7 +83,7 @@ img {
 
 .document>div>div {
     /* Cannot use for accessibility */
-    /* color: #888888; */
+    color: #999999;
     font-size: 14px;
     font-weight: normal;
     margin: 14px 0px;
@@ -136,7 +136,7 @@ img {
 
 .list>div>a>div {
     /* Cannot use for accessibility */
-    /* color: #888888; */
+    color: #999999;
     font-size: 14px;
     font-weight: normal;
     margin: 0px;
@@ -422,8 +422,8 @@ img {
 }
 
 .color-default {
-    background-color: #eeeeee;
-    color: #555555;
+    background-color: #333333;
+    color: #eeeeee;
 }
 
 .color-header {
@@ -442,20 +442,8 @@ img {
 }
 
 .color-swapon {
-    background-color: #ffc000;
-    color: #555555;
-}
-
-@media (prefers-color-scheme: dark) {
-    .color-default {
-        background-color: #333333;
-        color: #eeeeee;
-    }
-
-    .color-swapon {
-        background-color: #333333;
-        color: #ffc000;
-    }
+    background-color: #333333;
+    color: #ffc000;
 }
 
 /* Flex */
