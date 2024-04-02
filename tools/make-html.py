@@ -45,6 +45,10 @@ for root, _, files in os.walk(SOURCE_PATH):
         url = re.search('<url> *(.*?) *</url>', html).group(1)
         year = str(datetime.datetime.now().year)
 
+        preloads = []
+        for match in re.finditer('<preload> *(.*?) *</preload>', html):
+            preloads.append(match.group(1))
+
         # Replace html with <head>, <header> and <footer> of base html
         html = re.sub('<head>.*?</head>', base_head, html, flags=re.DOTALL)
         html = re.sub('<header>.*?</header>', base_header, html, flags=re.DOTALL)
@@ -63,6 +67,11 @@ for root, _, files in os.walk(SOURCE_PATH):
         else:
             html = re.sub('__PARALLAX__', 'color-header', html)
             html = re.sub('<script.*?javascript.js.*?</script>', '', html)
+
+        preload_tags = ''
+        for preload in preloads:
+            preload_tags += f'<link rel="preload" href="{preload}" as="image" fetchpriority="high">\n'
+        html = re.sub('__PRELOAD__', preload_tags, html)
 
         # Setup for local environment
         if sys.argv[1] == 'docs-local':
