@@ -58,13 +58,12 @@ img{vertical-align:top;height:auto;width:100%;}
 .background-image-forest{background-image:url(https://scidoggames.com/images/concept-art/forest-1024x576.webp);}
 .background-image-sea{background-image:url(https://scidoggames.com/images/concept-art/sea-1024x576.webp);}
 .background-image-istanbul{background-image:url(https://scidoggames.com/images/location/istanbul-1920x1080.webp);}
-.color-button{background-color:#555555;color:#eeeeee;}
+.color-button{background-color:#444444;color:#eeeeee;}
 .color-contact{background-color:#222222;color:#888888;}
 .color-copyright{background-color:#111111;color:#888888;}
 .color-default{background-color:#333333;color:#eeeeee;}
 .color-header{background-color:rgba(0,0,0,0.75);color:#eeeeee;}
 .color-menu{color:#eeeeee;}
-.color-swapon{background-color:#333333;color:#ffc000;}
 .flex-center{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;}
 .flex-space-around{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-around;}
 .flex-space-evenly{align-items:stretch;display:flex;flex-wrap:wrap;justify-content:space-evenly;}

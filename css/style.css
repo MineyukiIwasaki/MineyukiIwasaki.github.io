@@ -405,7 +405,7 @@ img {
 
 /* Color */
 .color-button {
-    background-color: #555555;
+    background-color: #444444;
     color: #eeeeee;
 }
 
@@ -432,11 +432,6 @@ img {
 .color-menu {
     /* background-color is changed by javascipt */
     color: #eeeeee;
-}
-
-.color-swapon {
-    background-color: #333333;
-    color: #ffc000;
 }
 
 /* Flex */
