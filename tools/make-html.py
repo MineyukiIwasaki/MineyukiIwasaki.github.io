@@ -43,11 +43,10 @@ for root, _, files in os.walk(SOURCE_PATH):
         parallax = re.search('<parallax> *(.*?) *</parallax>', html).group(1)
         title = re.search('<title> *(.*?) *</title>', html).group(1)
         url = re.search('<url> *(.*?) *</url>', html).group(1)
-        year = str(datetime.datetime.now().year)
-
         preloads = []
         for match in re.finditer('<preload> *(.*?) *</preload>', html):
             preloads.append(match.group(1))
+        year = str(datetime.datetime.now().year)
 
         # Replace html with <head>, <header> and <footer> of base html
         html = re.sub('<head>.*?</head>', base_head, html, flags=re.DOTALL)
@@ -67,7 +66,6 @@ for root, _, files in os.walk(SOURCE_PATH):
         else:
             html = re.sub('__PARALLAX__', 'color-header', html)
             html = re.sub('<script.*?javascript.js.*?</script>', '', html)
-
         preload_tags = ''
         for preload in preloads:
             preload_tags += f'<link rel="preload" href="{preload}" as="image" fetchpriority="high">\n'
