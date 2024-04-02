@@ -10,7 +10,7 @@ img{vertical-align:top;height:auto;width:100%;}
 .contact>div{margin:10px;}
 .copyright>div{margin:10px;}
 .document>div{margin:10px;max-width:800px;}
-.document>div>div{color:#999999;font-size:14px;font-weight:normal;margin:14px 0px;text-align:center;}
+.document>div>div{color:#aaaaaa;font-size:14px;font-weight:normal;margin:14px 0px;text-align:center;}
 .document>div>h1{font-size:28px;font-weight:normal;margin-top:0px;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .document>div>h2{font-size:22px;font-weight:normal;}
 .document>div>img{border-radius:25px;}
@@ -19,7 +19,7 @@ img{vertical-align:top;height:auto;width:100%;}
 .document .button a{text-decoration:none;}
 .header{position:fixed;transition:background-color 0.5s ease;z-index:1;}
 .list>div{margin:10px;min-width:160px;width:0%;}
-.list>div>a>div{color:#999999;font-size:14px;font-weight:normal;margin:0px;text-align:center;}
+.list>div>a>div{color:#aaaaaa;font-size:14px;font-weight:normal;margin:0px;text-align:center;}
 .list>div>a>h1{font-size:16px;font-weight:normal;margin:10px 0px;text-align:center;}
 .list>div>a>img{border-radius:25px;}
 .logo{margin:0px 10px;min-width:194.27px;width:0%;}

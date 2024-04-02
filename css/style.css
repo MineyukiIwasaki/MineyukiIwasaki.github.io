@@ -83,7 +83,7 @@ img {
 
 .document>div>div {
     /* Cannot use for accessibility */
-    color: #999999;
+    color: #aaaaaa;
     font-size: 14px;
     font-weight: normal;
     margin: 14px 0px;
@@ -136,7 +136,7 @@ img {
 
 .list>div>a>div {
     /* Cannot use for accessibility */
-    color: #999999;
+    color: #aaaaaa;
     font-size: 14px;
     font-weight: normal;
     margin: 0px;
