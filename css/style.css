@@ -18,14 +18,6 @@
     src: url(https://use.fontawesome.com/releases/v6.5.1/webfonts/fa-brands-400.woff2) format('woff2');
 }
 
-@font-face {
-    font-display: swap;
-    font-family: 'Font Awesome 6 Free';
-    font-style: normal;
-    font-weight: 900;
-    src: url(https://use.fontawesome.com/releases/v6.5.1/webfonts/fa-solid-900.woff2) format('woff2');
-}
-
 /* A */
 a {
     color: inherit;
@@ -476,8 +468,7 @@ img {
 }
 
 /* Font Awesome */
-.fab,
-.fas {
+.fab {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -487,23 +478,16 @@ img {
     text-rendering: auto;
 }
 
-.fab.fa-pull-left,
-.fas.fa-pull-left {
+.fab.fa-pull-left {
     margin-right: 0.3em;
 }
 
-.fab.fa-pull-right,
-.fas.fa-pull-right {
+.fab.fa-pull-right {
     margin-left: 0.3em;
 }
 
 .fab {
     font-family: 'Font Awesome 6 Brands';
-}
-
-.fas {
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
 }
 
 .fa-fw {
@@ -532,8 +516,4 @@ img {
 
 .fa-youtube:before {
     content: "\f167";
-}
-
-.fa-envelope:before {
-    content: "\f0e0";
 }
