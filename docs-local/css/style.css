@@ -64,7 +64,6 @@ img{vertical-align:top;height:auto;width:100%;}
 .color-default{background-color:#333333;color:#eeeeee;}
 .color-header{background-color:rgba(0,0,0,0.75);color:#eeeeee;}
 .color-menu{color:#eeeeee;}
-.color-reverse{background-color:#555555;color:#eeeeee;}
 .color-swapon{background-color:#333333;color:#ffc000;}
 .flex-center{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;}
 .flex-space-around{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-around;}
