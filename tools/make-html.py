@@ -65,7 +65,7 @@ for root, _, files in os.walk(SOURCE_PATH):
             html = re.sub('__PARALLAX__', '', html)
         else:
             html = re.sub('__PARALLAX__', 'color-header', html)
-            html = re.sub('<script.*?javascript.js.*?</script>', '', html)
+            html = re.sub('<script.*?script.js.*?</script>', '', html)
         preload_tags = ''
         for preload in preloads:
             preload_tags += f'<link rel="preload" href="{preload}" as="image" fetchpriority="high">\n'
