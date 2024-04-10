@@ -26,3 +26,5 @@ Making a voxel based game with Unity. Check out "Indie Game Devlog For Retro Gam
 - Update the Unity app-ads.txt at https://dashboard.unity3d.com/gaming/organizations/761278/monetization/organization-settings
 134x134 144x144
 512 * 134/144 = 476.444444444
+512 * 122/144 = 434
+256 + 128 = 384 + 64 = 448, 384+32 = 416
