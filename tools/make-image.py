@@ -7,6 +7,7 @@ import re
 import sys
 
 DEPLOY_PATH = sys.argv[1]
+#JPEG, PNG, GIF, TIFF, and even some less common ones like HEIC and WebP.
 EXTENSIONS = ('.ico', '.svg', '.bmp', '.hdr', '.jpg', '.png', '.psd', '.tga')
 SOURCE_PATH = 'images'
 
@@ -37,13 +38,16 @@ for root, _, files in os.walk(SOURCE_PATH):
         small_height = int(large_height / 4)
         base = re.search('(.*?)-([0-9]+)x([0-9]+)-([0-9]+)', base).group(1)
 
-        #print(f'BASE: {base} {large_width}*{large_height}')
-
         input_file = os.path.join(root, file)
         output_file = os.path.join(dir_path, f'{base}-{large_width}x{large_height}.webp')
-        large_output_file = os.path.join(dir_path, f'{base}-large.webp')
-        medium_output_file = os.path.join(dir_path, f'{base}-medium.webp')
-        small_output_file = os.path.join(dir_path, f'{base}-small.webp')
+        #large_output_file = os.path.join(dir_path, f'{base}-large.webp')
+        #medium_output_file = os.path.join(dir_path, f'{base}-medium.webp')
+        #small_output_file = os.path.join(dir_path, f'{base}-small.webp')
+
+
+        #large_width = int(large_width/4)
+        #large_height = int(large_height/4)
+
         os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {large_width}x{large_height} {output_file}')
         #os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {large_width}x{large_height} {large_output_file}')
         #os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {medium_width}x{medium_height} {medium_output_file}')

@@ -71,6 +71,7 @@ img {
 .document>div {
     margin: 10px;
     max-width: 800px;
+    width: 100%;
 }
 
 .document>div>div {
@@ -166,6 +167,7 @@ img {
 .message>div {
     margin: 10px;
     max-width: 800px;
+    width: 100%;
 }
 
 .message>div>h1 {
@@ -196,6 +198,7 @@ img {
 .parallax-short>div {
     margin: 10px;
     max-width: 800px;
+    width: 100%;
 }
 
 .parallax>div>h1 {
@@ -234,6 +237,7 @@ img {
 .poster>div {
     margin: 10px;
     max-width: 800px;
+    width: 100%;
 }
 
 .poster>div>img,
@@ -245,6 +249,7 @@ img {
 .poster-3>div {
     margin: 10px;
     max-width: 800px;
+    width: 100%;
 }
 
 .poster-3>div>div {
