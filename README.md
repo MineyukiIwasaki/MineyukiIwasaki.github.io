@@ -9,6 +9,10 @@
 | Instagram | https://www.instagram.com/scidoggames |
 | YouTube | https://www.youtube.com/@ScidogGames |
 
+## Rules
+### Icons
+- 416 x 416 -> 512 x 512
+
 ## SETTINGS
 ### Bio
 - 96 characters (Facebook: 101, X: 160, Instagram: 150, YouTube: 1000)
@@ -24,7 +28,3 @@ Making a voxel based game with Unity. Check out "Indie Game Devlog For Retro Gam
 - Check the external links.
 - Update the copyright every year.
 - Update the Unity app-ads.txt at https://dashboard.unity3d.com/gaming/organizations/761278/monetization/organization-settings
-134x134 144x144
-512 * 134/144 = 476.444444444
-512 * 122/144 = 434
-256 + 128 = 384 + 64 = 448, 384+32 = 416
