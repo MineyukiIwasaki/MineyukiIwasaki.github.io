@@ -39,11 +39,11 @@ for root, _, files in os.walk(SOURCE_PATH):
         large_width = int(base_width * large_scale)
         large_height = int(base_width * large_scale * height / width)
 
-        output_file = os.path.join(dir_path, f'{base}-{large_width}x{large_height}.webp')
-        os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {large_width}x{large_height} {output_file}')
-        output_file_size = os.path.getsize(output_file)
-        print(f'Converted to {output_file} {input_file_size / 1000:.2f}kb -> {output_file_size / 1000:.2f}kb' + \
-            f' ({100 * output_file_size / input_file_size:.2f}%)')
+        #output_file = os.path.join(dir_path, f'{base}-{large_width}x{large_height}.webp')
+        #os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {large_width}x{large_height} {output_file}')
+        #output_file_size = os.path.getsize(output_file)
+        #print(f'Converted to {output_file} {input_file_size / 1000:.2f}kb -> {output_file_size / 1000:.2f}kb' + \
+        #    f' ({100 * output_file_size / input_file_size:.2f}%)')
 
         large_output_file = os.path.join(dir_path, f'{base}-large.webp')
         os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {large_width}x{large_height} {large_output_file}')

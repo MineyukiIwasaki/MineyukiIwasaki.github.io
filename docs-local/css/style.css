@@ -52,11 +52,11 @@ img{vertical-align:top;height:auto;width:100%;}
 .youtube>div>div>iframe{border-radius:25px;height:100%;position:absolute;width:100%;}
 .animation-slide-in{animation:animation-slide-in 1s ease;will-change:animation,transform;}
 @keyframes animation-slide-in{0%{transform:translateY(-300px);}100%{transform:translateY(0px);}}
-.background-image-swapon{background-image:url(https://scidoggames.com/images/games/swapon/background-1920x1080.webp);}
-.background-image-building{background-image:url(https://scidoggames.com/images/concept-art/building-1024x576.webp);}
-.background-image-forest{background-image:url(https://scidoggames.com/images/concept-art/forest-1024x576.webp);}
-.background-image-sea{background-image:url(https://scidoggames.com/images/concept-art/sea-1024x576.webp);}
-.background-image-istanbul{background-image:url(https://scidoggames.com/images/location/istanbul-1920x1080.webp);}
+.background-image-swapon{background-image:url(https://scidoggames.com/images/games/swapon/background-large.webp);}
+.background-image-building{background-image:url(https://scidoggames.com/images/concept-art/building-large.webp);}
+.background-image-forest{background-image:url(https://scidoggames.com/images/concept-art/forest-large.webp);}
+.background-image-sea{background-image:url(https://scidoggames.com/images/concept-art/sea-large.webp);}
+.background-image-istanbul{background-image:url(https://scidoggames.com/images/location/istanbul-large.webp);}
 .color-button{background-color:#444444;color:#eeeeee;}
 .color-contact{background-color:#222222;color:#888888;}
 .color-copyright{background-color:#111111;color:#888888;}
