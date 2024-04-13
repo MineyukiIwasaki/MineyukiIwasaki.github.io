@@ -45,26 +45,26 @@ for root, _, files in os.walk(SOURCE_PATH):
         print(f'Converted to {output_file} {input_file_size / 1000:.2f}kb -> {output_file_size / 1000:.2f}kb' + \
             f' ({100 * output_file_size / input_file_size:.2f}%)')
 
-        #large_output_file = os.path.join(dir_path, f'{base}-large.webp')
-        #os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {large_width}x{large_height} {large_output_file}')
-        #large_output_file_size = os.path.getsize(large_output_file)
-        #print(f'Converted to {large_output_file} {input_file_size / 1000:.2f}kb -> {large_output_file_size / 1000:.2f}kb' + \
-        #    f' ({100 * large_output_file_size / input_file_size:.2f}%)')
+        large_output_file = os.path.join(dir_path, f'{base}-large.webp')
+        os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {large_width}x{large_height} {large_output_file}')
+        large_output_file_size = os.path.getsize(large_output_file)
+        print(f'Converted to {large_output_file} {input_file_size / 1000:.2f}kb -> {large_output_file_size / 1000:.2f}kb' + \
+            f' ({100 * large_output_file_size / input_file_size:.2f}%)')
 
-        #medium_scale = 1024.0 / 1920.0 
-        #medium_width = int(base_width * medium_scale)
-        #medium_height = int(base_width * medium_scale * height / width)
-        #medium_output_file = os.path.join(dir_path, f'{base}-medium.webp')
-        #os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {medium_width}x{medium_height} {medium_output_file}')
-        #medium_output_file_size = os.path.getsize(medium_output_file)
-        #print(f'Converted to {medium_output_file} {input_file_size / 1000:.2f}kb -> {medium_output_file_size / 1000:.2f}kb' + \
-        #    f' ({100 * medium_output_file_size / input_file_size:.2f}%)')
+        medium_scale = 1024.0 / 1920.0 
+        medium_width = int(base_width * medium_scale)
+        medium_height = int(base_width * medium_scale * height / width)
+        medium_output_file = os.path.join(dir_path, f'{base}-medium.webp')
+        os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {medium_width}x{medium_height} {medium_output_file}')
+        medium_output_file_size = os.path.getsize(medium_output_file)
+        print(f'Converted to {medium_output_file} {input_file_size / 1000:.2f}kb -> {medium_output_file_size / 1000:.2f}kb' + \
+            f' ({100 * medium_output_file_size / input_file_size:.2f}%)')
 
-        #small_scale = 768.0 / 1920.0
-        #small_width = int(base_width * small_scale)
-        #small_height = int(base_width * small_scale * height / width)
-        #small_output_file = os.path.join(dir_path, f'{base}-small.webp')
-        #os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {small_width}x{small_height} {small_output_file}')
-        #small_output_file_size = os.path.getsize(small_output_file)
-        #print(f'Converted to {small_output_file} {input_file_size / 1000:.2f}kb -> {small_output_file_size / 1000:.2f}kb' + \
-        #    f' ({100 * small_output_file_size / input_file_size:.2f}%)')
+        small_scale = 768.0 / 1920.0
+        small_width = int(base_width * small_scale)
+        small_height = int(base_width * small_scale * height / width)
+        small_output_file = os.path.join(dir_path, f'{base}-small.webp')
+        os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {small_width}x{small_height} {small_output_file}')
+        small_output_file_size = os.path.getsize(small_output_file)
+        print(f'Converted to {small_output_file} {input_file_size / 1000:.2f}kb -> {small_output_file_size / 1000:.2f}kb' + \
+            f' ({100 * small_output_file_size / input_file_size:.2f}%)')
