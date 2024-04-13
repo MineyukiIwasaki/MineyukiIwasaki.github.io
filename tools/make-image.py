@@ -8,7 +8,7 @@ import sys
 
 DEPLOY_PATH = sys.argv[1]
 #JPEG, PNG, GIF, TIFF, and even some less common ones like HEIC and WebP.
-EXTENSIONS = ('.webp', '.ico', '.svg', '.bmp', '.hdr', '.jpg', '.png', '.psd', '.tga')
+EXTENSIONS = ('.webp', '.svg', '.bmp', '.hdr', '.jpg', '.png', '.psd', '.tga')
 SOURCE_PATH = 'images'
 
 # Find all html
@@ -23,7 +23,7 @@ for root, _, files in os.walk(SOURCE_PATH):
         if not os.path.exists(dir_path):
             os.makedirs(dir_path)
 
-        if ext.lower() == '.ico' or ext.lower() == '.svg':
+        if ext.lower() == '.svg':
             os.system(f'cp -f {os.path.join(root, file)} {os.path.join(dir_path, file)}')
             print(f'Copied to {os.path.join(dir_path, file)}')
             continue
@@ -38,13 +38,6 @@ for root, _, files in os.walk(SOURCE_PATH):
         large_scale = 1.0
         large_width = int(base_width * large_scale)
         large_height = int(base_width * large_scale * height / width)
-
-        #output_file = os.path.join(dir_path, f'{base}-{large_width}x{large_height}.webp')
-        #os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {large_width}x{large_height} {output_file}')
-        #output_file_size = os.path.getsize(output_file)
-        #print(f'Converted to {output_file} {input_file_size / 1000:.2f}kb -> {output_file_size / 1000:.2f}kb' + \
-        #    f' ({100 * output_file_size / input_file_size:.2f}%)')
-
         large_output_file = os.path.join(dir_path, f'{base}-large.webp')
         os.system(f'magick {input_file} -define webp:method=6 -quality 50 -thumbnail {large_width}x{large_height} {large_output_file}')
         large_output_file_size = os.path.getsize(large_output_file)

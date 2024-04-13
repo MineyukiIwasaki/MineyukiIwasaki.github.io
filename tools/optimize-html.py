@@ -145,15 +145,3 @@ for root, _, files in os.walk(DEPLOY_PATH):
         f.close()
         print(f'Optimized {file_path} {len(original_content) / 1000:.2f}kb -> {len(content) / 1000:.2f}kb' + \
             f' ({100 * len(content) / len(original_content):.2f}%)')
-
-# Find all jpg and png
-for root, _, files in os.walk(DEPLOY_PATH):
-    for file in files:
-        base, ext = os.path.splitext(file)
-        if ext != '.jpg' and ext != '.png':
-            continue
-
-        # Remove jpg and png
-        file_path = os.path.join(root, file)
-        os.remove(file_path)
-        print(f'Removed {file_path}')

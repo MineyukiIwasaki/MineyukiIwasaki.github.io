@@ -12,7 +12,7 @@ debug:
 	@cp -f etc/app-ads.txt docs-local
 	@cp -f etc/CNAME docs-local
 	@tools/make-html.py docs-local
-#	@tools/make-image.py docs-local
+	@tools/make-image.py docs-local
 	@tools/make-sitemap.py docs-local
 	@tools/optimize-html.py docs-local
 
@@ -24,7 +24,7 @@ release:
 	@cp -f etc/app-ads.txt docs
 	@cp -f etc/CNAME docs
 	@tools/make-html.py docs
-#	@tools/make-image.py docs
+	@tools/make-image.py docs
 	@tools/make-sitemap.py docs
 	@tools/optimize-html.py docs
 
