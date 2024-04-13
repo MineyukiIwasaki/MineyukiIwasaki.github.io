@@ -272,6 +272,7 @@ img {
 .profile>div {
     margin: 10px;
     max-width: 300px;
+    width: 100%;
 }
 
 .profile>div>h1 {
@@ -343,7 +344,6 @@ img {
     0% {
         transform: translateY(-300px);
     }
-
     100% {
         transform: translateY(0px);
     }

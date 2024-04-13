@@ -40,7 +40,7 @@ img{vertical-align:top;height:auto;width:100%;}
 .poster-3>div>div:nth-child(1)>picture>img{border-radius:25px 0px 0px 25px;}
 .poster-3>div>div:nth-child(2)>picture>img{border-radius:0px;}
 .poster-3>div>div:nth-child(3)>picture>img{border-radius:0px 25px 25px 0px;}
-.profile>div{margin:10px;max-width:300px;}
+.profile>div{margin:10px;max-width:300px;width:100%;}
 .profile>div>h1{font-size:28px;font-weight:normal;margin-top:0px;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .profile>div>h2{font-size:22px;font-weight:normal;text-align:center;}
 .profile>div>h3{font-size:16px;font-weight:normal;text-align:center;}
