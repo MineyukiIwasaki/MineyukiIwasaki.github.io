@@ -8,7 +8,7 @@ import sys
 
 DEPLOY_PATH = sys.argv[1]
 #JPEG, PNG, GIF, TIFF, and even some less common ones like HEIC and WebP.
-EXTENSIONS = ('.ico', '.svg', '.bmp', '.hdr', '.jpg', '.png', '.psd', '.tga')
+EXTENSIONS = ('.webp', '.ico', '.svg', '.bmp', '.hdr', '.jpg', '.png', '.psd', '.tga')
 SOURCE_PATH = 'images'
 
 # Find all html
