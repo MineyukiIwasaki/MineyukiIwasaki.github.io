@@ -96,7 +96,7 @@ img {
     font-weight: normal;
 }
 
-.document>div>img {
+.document>div>picture>img {
     border-radius: 25px;
 }
 
@@ -141,7 +141,7 @@ img {
     text-align: center;
 }
 
-.list>div>a>img {
+.list>div>a>picture>img {
     border-radius: 25px;
 }
 
@@ -240,8 +240,8 @@ img {
     width: 100%;
 }
 
-.poster>div>img,
-.poster>div>a>img {
+.poster>div>picture>img,
+.poster>div>a>picture>img {
     border-radius: 25px;
 }
 
@@ -256,15 +256,15 @@ img {
     width: calc(100% / 3);
 }
 
-.poster-3>div>div:nth-child(1)>img {
+.poster-3>div>div:nth-child(1)>picture>img {
     border-radius: 25px 0px 0px 25px;
 }
 
-.poster-3>div>div:nth-child(2)>img {
+.poster-3>div>div:nth-child(2)>picture>img {
     border-radius: 0px;
 }
 
-.poster-3>div>div:nth-child(3)>img {
+.poster-3>div>div:nth-child(3)>picture>img {
     border-radius: 0px 25px 25px 0px;
 }
 

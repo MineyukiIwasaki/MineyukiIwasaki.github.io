@@ -12,7 +12,7 @@ img{vertical-align:top;height:auto;width:100%;}
 .document>div>div{color:#aaaaaa;font-size:14px;font-weight:normal;margin:14px 0px;text-align:center;}
 .document>div>h1{font-size:28px;font-weight:normal;margin-top:0px;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .document>div>h2{font-size:22px;font-weight:normal;}
-.document>div>img{border-radius:25px;}
+.document>div>picture>img{border-radius:25px;}
 .document>div>p:last-child{margin-bottom:0px;}
 .document a{text-decoration:underline;}
 .document .button a{text-decoration:none;}
@@ -20,7 +20,7 @@ img{vertical-align:top;height:auto;width:100%;}
 .list>div{margin:10px;min-width:160px;width:0%;}
 .list>div>a>div{color:#aaaaaa;font-size:14px;font-weight:normal;margin:0px;text-align:center;}
 .list>div>a>h1{font-size:16px;font-weight:normal;margin:10px 0px;text-align:center;}
-.list>div>a>img{border-radius:25px;}
+.list>div>a>picture>img{border-radius:25px;}
 .logo{margin:0px 10px;min-width:194.27px;width:0%;}
 .menu>div{margin:10px;}
 @media(max-width:398px){.menu>div{margin-bottom:0px;}}
@@ -34,12 +34,12 @@ img{vertical-align:top;height:auto;width:100%;}
 .parallax-short{background-position:center;background-repeat:no-repeat;background-size:cover;height:20vh;}
 .parallax-short>div>h2{font-size:28px;font-weight:normal;margin:0px;text-align:center;}
 .poster>div{margin:10px;max-width:800px;width:100%;}
-.poster>div>img,.poster>div>a>img{border-radius:25px;}
+.poster>div>picture>img,.poster>div>a>picture>img{border-radius:25px;}
 .poster-3>div{margin:10px;max-width:800px;width:100%;}
 .poster-3>div>div{width:calc(100%/3);}
-.poster-3>div>div:nth-child(1)>img{border-radius:25px 0px 0px 25px;}
-.poster-3>div>div:nth-child(2)>img{border-radius:0px;}
-.poster-3>div>div:nth-child(3)>img{border-radius:0px 25px 25px 0px;}
+.poster-3>div>div:nth-child(1)>picture>img{border-radius:25px 0px 0px 25px;}
+.poster-3>div>div:nth-child(2)>picture>img{border-radius:0px;}
+.poster-3>div>div:nth-child(3)>picture>img{border-radius:0px 25px 25px 0px;}
 .profile>div{margin:10px;max-width:300px;}
 .profile>div>h1{font-size:28px;font-weight:normal;margin-top:0px;text-align:center;text-decoration-color:#00c0ff;text-decoration-line:underline;}
 .profile>div>h2{font-size:22px;font-weight:normal;text-align:center;}
