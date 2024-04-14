@@ -1,147 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<link rel="canonical" href="file://C:/Users/miney/Documents/Website/docs-local/games/swapon/index.html">
-<link rel="icon" href="file://C:/Users/miney/Documents/Website/docs-local/images/games/swapon/favicon.webp">
-<meta charset="UTF-8">
-<meta http-equiv="content-language" content="en">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Swapon is the lovely puzzle game for Android/iOS.">
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Swapon - The Lovely Puzzule Game</title>
-<meta property="og:description" content="Swapon is the lovely puzzle game for Android/iOS.">
-<meta property="og:image" content="file://C:/Users/miney/Documents/Website/docs-local/images/games/swapon/poster.webp">
-<meta property="og:site_name" content="Scidog Games">
-<meta property="og:title" content="Swapon - The Lovely Puzzule Game">
-<meta property="og:type" content="article">
-<meta property="og:url" content="file://C:/Users/miney/Documents/Website/docs-local/games/swapon/index.html">
-<link rel="apple-touch-icon" href="file://C:/Users/miney/Documents/Website/docs-local/images/games/swapon/favicon.webp">
-<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-<meta name="theme-color" content="#000000">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@ScidogGames">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
-<link rel="stylesheet" href="file://C:/Users/miney/Documents/Website/docs-local/css/style.css">
-<script async src="file://C:/Users/miney/Documents/Website/docs-local/js/script.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PKRKFQPQJQ"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PKRKFQPQJQ');</script>
-</head>
-<body>
-<header>
-<nav class="header flex-space-around padding-start padding-end " id="header">
-<section class="logo">
-<a href="file://C:/Users/miney/Documents/Website/docs-local/index.html">
-<img src="file://C:/Users/miney/Documents/Website/docs-local/images/scidog-games/logo.svg" alt="Scidog Games logo" loading="eager">
-</a>
-</section>
-<section class="menu color-menu flex-center">
-<div>
-<a href="file://C:/Users/miney/Documents/Website/docs-local/index.html">Home</a>
-</div>
-<div>
-<a href="file://C:/Users/miney/Documents/Website/docs-local/games/index.html">Games</a>
-</div>
-<div>
-<a href="file://C:/Users/miney/Documents/Website/docs-local/blog/index.html">Blog</a>
-</div>
-</section>
-</nav>
-</header>
-<section class="parallax background-image-swapon color-default flex-center" id="parallax">
-<div class="animation-slide-in flex-center">
-<img src="file://C:/Users/miney/Documents/Website/docs-local/images/games/swapon/logo.svg" alt="Swapon logo" loading="eager">
-<nav class="flex-space-evenly" style="width:100%;">
-<div class="store-app-store">
-<img src="file://C:/Users/miney/Documents/Website/docs-local/images/store/app-store-badge.svg" alt="App Store badge" loading="eager">
-</div>
-<div class="store-google-play">
-<img src="file://C:/Users/miney/Documents/Website/docs-local/images/store/google-play-badge-old.webp" alt="Google Play badge" loading="eager" width="564" height="168">
-</div>
-</nav>
-<h2>Maybe available on 2024</h2>
-</div>
-</section>
-<main>
-<article class="message color-default flex-center padding-start">
-<div>
-<h1><em>Great fun, interesting game design. Love the concept.</em></h1>
-<h2>IGA cross review of Taipei Game Show 2020</h2>
-</div>
-</article>
-<section class="youtube color-default flex-center">
-<div>
-<div>
-<iframe src="https://www.youtube-nocookie.com/embed/pj_SdI-kRzE?autoplay=1&mute=1&playsinline=1&loop=1&playlist=pj_SdI-kRzE" title="Swapon movie" frameborder="0" allowfullscreen loading="lazy"></iframe>
-</div>
-</div>
-</section>
-<article class="document color-default flex-center">
-<div>
-<h1>ABOUT SWAPON</h1>
-<p>Swapon is the lovely puzzle game for Android/iOS.</p>
-<p>The game rule is quite simple!</p>
-<ol>
-<li>Get all coins in the level</li>
-<li>Tap two cubic cursors to swap</li>
-<li>Control route of the character</li>
-</ol>
-<p>Enjoy the Swapon!</p>
-<div class="flex-space-around">
-<div class="button color-button">
-<a href="file://C:/Users/miney/Documents/Website/docs-local/press-kits/games/swapon/SwaponPressKit_20210107.zip">Download Press Kit</a>
-</div>
-</div>
-</div>
-</article>
-<section class="poster-3 color-default flex-center">
-<div class="flex-center">
-<div>
-<img src="file://C:/Users/miney/Documents/Website/docs-local/images/games/swapon/screenshot-1.webp" alt="Swapon screenshot 1" loading="lazy" width="534" height="300">
-</div>
-<div>
-<img src="file://C:/Users/miney/Documents/Website/docs-local/images/games/swapon/screenshot-2.webp" alt="Swapon screenshot 2" loading="lazy" width="534" height="300">
-</div>
-<div>
-<img src="file://C:/Users/miney/Documents/Website/docs-local/images/games/swapon/screenshot-3.webp" alt="Swapon screenshot 3" loading="lazy" width="534" height="300">
-</div>
-</div>
-</section>
-<section class="poster color-default flex-center padding-end">
-<div>
-<img src="file://C:/Users/miney/Documents/Website/docs-local/images/games/swapon/poster.webp" alt="Swapon poster" loading="lazy" width="1600" height="900">
-</div>
-</section>
-</main>
-<footer>
-<address class="contact color-contact flex-center padding-start padding-end">
-<div>
-<a href="https://www.facebook.com/ScidogGames" target="_blank" rel="noopener noreferrer" aria-label="Facebook link">
-<i class="fab fa-facebook fa-fw fa-lg"></i>
-</a>
-</div>
-<div>
-<a href="https://twitter.com/ScidogGames" target="_blank" rel="noopener noreferrer" aria-label="X link">
-<i class="fab fa-x-twitter fa-fw fa-lg"></i>
-</a>
-</div>
-<div>
-<a href="https://www.instagram.com/scidoggames" target="_blank" rel="noopener noreferrer" aria-label="Instagram link">
-<i class="fab fa-instagram fa-fw fa-lg"></i>
-</a>
-</div>
-<div>
-<a href="https://www.youtube.com/@ScidogGames" target="_blank" rel="noopener noreferrer" aria-label="Youtube link">
-<i class="fab fa-youtube fa-fw fa-lg"></i>
-</a>
-</div>
-</address>
-<section class="copyright color-copyright flex-space-around padding-start padding-end">
-<div>&copy; 2024 Scidog Games</div>
-<div>
-<a href="file://C:/Users/miney/Documents/Website/docs-local/privacy-policy/index.html">Privacy Policy</a>
-</div>
-</section>
-</footer>
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="52.916668mm"
+   height="52.916668mm"
+   viewBox="0 0 52.916668 52.916668"
+   version="1.1"
+   id="svg1934"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1928" />
+  <metadata
+     id="metadata1931">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <g
+       transform="translate(-5.291667,-5.2916663)"
+       style="fill:#ffc000;fill-opacity:1;stroke:none;paint-order:stroke markers fill"
+       id="g58">
+      <g
+         style="fill:#ffc000;fill-opacity:1;stroke:none;paint-order:stroke markers fill"
+         id="g88">
+        <path
+           d="m 21.166667,37.041667 h 21.166666 v 5.291666 h -31.75 v 10.583334 h 31.75 c 0,0 10.583334,0 10.583334,-10.583334 v -5.291666 c 0,0 0,-10.583334 -10.583334,-10.583334 h -31.75 c 0,10.583334 10.583334,10.583334 10.583334,10.583334 z m 0,-26.458334 h 31.75 V 21.166667 H 10.583333 c -3e-6,-10.583334 10.583334,-10.583334 10.583334,-10.583334 z"
+           style="fill:#ffc000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+           id="path1940" />
+      </g>
+    </g>
+    <path
+       id="path844"
+       d="M 47.624999,15.875 V 5.2916666 c 0,0 -21.166666,0 -31.749999,0 C 5.2916666,5.2916666 5.2916666,15.875 5.2916666,15.875 c 0,0 0,-5.291667 0,5.291666 C 5.2916666,31.75 15.875,31.75 15.875,31.75 h 21.166666 v 5.291666 H 5.2916666 v 10.583333 c 0,0 21.1666664,0 31.7499994,0 10.583333,0 10.583333,-10.583333 10.583333,-10.583333 0,0 0,5.291667 0,-5.291666 0,-10.583334 -10.583333,-10.583334 -10.583333,-10.583334 h 15.875 c 0,0 0,0 0,15.875 0,15.875 -15.875,15.875 -15.875,15.875 0,0 -26.458333,0 -31.7499994,0 C 0,52.916666 0,47.624999 0,47.624999 0,47.624999 0,31.75 0,15.875 0,0 15.875,0 15.875,0 c 0,0 26.458333,0 31.749999,0 5.291667,0 5.291667,5.2916666 5.291667,5.2916666 V 21.166666 H 5.2916666 V 15.875 Z"
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>
