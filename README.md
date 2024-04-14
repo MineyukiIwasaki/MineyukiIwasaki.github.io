@@ -30,4 +30,3 @@ Making a voxel based game with Unity. Check out "Indie Game Devlog For Retro Gam
 - Update the Unity app-ads.txt at https://dashboard.unity3d.com/gaming/organizations/761278/monetization/organization-settings
 
 - Update privacy policy
-- Update Google Play badge

@@ -301,11 +301,19 @@ img {
 }
 
 /* Store */
+/*
+How to calculate app store badge:
+scale = 103.19 * 168 / 250 / 89.13
+- 89.13: Apple height (width:100%/3)
+- 103.19: Google height with margin (width:100%/3)
+- 168: Google height without margin (original)
+- 250: Google height with margin (original)
+*/
 .store-app-store {
     margin: 10px;
-    min-width: calc(160px / 1.12229825518);
+    min-width: calc(160px * 0.77800605856);
     opacity: 40%;
-    width: calc(100% / 3.36689476554);
+    width: calc(100% * 0.25933535285);
 }
 
 .store-google-play {
@@ -447,7 +455,7 @@ img {
 }
 
 .flex-space-evenly {
-    align-items: stretch;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

@@ -60,6 +60,7 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub(' +', ' ', content)
             content = re.sub(r' *\( *', '(', content)
             content = re.sub(r' *\) *', ')', content)
+            content = re.sub(r' *\* *', '*', content)
             content = re.sub(' *, *', ',', content)
             content = re.sub(r' *\/ *', '/', content)
             content = re.sub(' *: *', ':', content)

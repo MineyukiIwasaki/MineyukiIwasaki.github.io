@@ -45,7 +45,7 @@ img{vertical-align:top;height:auto;width:100%;}
 .profile>div>h2{font-size:22px;font-weight:normal;text-align:center;}
 .profile>div>h3{font-size:16px;font-weight:normal;text-align:center;}
 .profile>div>p{margin-bottom:0px;}
-.store-app-store{margin:10px;min-width:calc(160px/1.12229825518);opacity:40%;width:calc(100%/3.36689476554);}
+.store-app-store{margin:10px;min-width:calc(160px*0.77800605856);opacity:40%;width:calc(100%*0.25933535285);}
 .store-google-play{margin:10px;min-width:160px;opacity:40%;width:calc(100%/3);}
 .youtube>div{margin:10px;max-width:800px;width:100%;}
 .youtube>div>div{padding-bottom:56.25%;position:relative;}
@@ -65,7 +65,7 @@ img{vertical-align:top;height:auto;width:100%;}
 .color-menu{color:#eeeeee;}
 .flex-center{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;}
 .flex-space-around{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-around;}
-.flex-space-evenly{align-items:stretch;display:flex;flex-wrap:wrap;justify-content:space-evenly;}
+.flex-space-evenly{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-evenly;}
 .padding-end{padding-bottom:10px;}
 .padding-start{padding-top:10px;}
 .padding-start-header{padding-top:68px;}
