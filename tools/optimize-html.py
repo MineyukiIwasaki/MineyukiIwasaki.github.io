@@ -138,7 +138,6 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub(' *xmlns:rdf=".*?"', '', content)
             content = re.sub(' *xmlns:sodipodi=".*?"', '', content)
             content = re.sub(' *xmlns:svg=".*?"', '', content)
-            content = original_content
 
         # Write html, css, js and svg
         f = open(file_path, 'w', encoding='utf-8')
