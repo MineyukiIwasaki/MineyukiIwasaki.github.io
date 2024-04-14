@@ -96,7 +96,7 @@ img {
     font-weight: normal;
 }
 
-.document>div>picture>img {
+.document>div>img {
     border-radius: 25px;
 }
 
@@ -141,7 +141,7 @@ img {
     text-align: center;
 }
 
-.list>div>a>picture>img {
+.list>div>a>img {
     border-radius: 25px;
 }
 
@@ -240,8 +240,8 @@ img {
     width: 100%;
 }
 
-.poster>div>picture>img,
-.poster>div>a>picture>img {
+.poster>div>img,
+.poster>div>a>img {
     border-radius: 25px;
 }
 
@@ -256,15 +256,15 @@ img {
     width: calc(100% / 3);
 }
 
-.poster-3>div>div:nth-child(1)>picture>img {
+.poster-3>div>div:nth-child(1)>img {
     border-radius: 25px 0px 0px 25px;
 }
 
-.poster-3>div>div:nth-child(2)>picture>img {
+.poster-3>div>div:nth-child(2)>img {
     border-radius: 0px;
 }
 
-.poster-3>div>div:nth-child(3)>picture>img {
+.poster-3>div>div:nth-child(3)>img {
     border-radius: 0px 25px 25px 0px;
 }
 
@@ -351,52 +351,52 @@ img {
 
 /* Background Image */
 .background-image-swapon {
-    background-image: url(https://scidoggames.com/images/games/swapon/background-large.webp);
+    background-image: url(https://scidoggames.com/images/games/swapon/background.webp);
 }
 
 .background-image-building {
-    background-image: url(https://scidoggames.com/images/concept-art/building-large.webp);
+    background-image: url(https://scidoggames.com/images/concept-art/building.webp);
 }
 
 .background-image-forest {
-    background-image: url(https://scidoggames.com/images/concept-art/forest-large.webp);
+    background-image: url(https://scidoggames.com/images/concept-art/forest.webp);
 }
 
 .background-image-sea {
-    background-image: url(https://scidoggames.com/images/concept-art/sea-large.webp);
+    background-image: url(https://scidoggames.com/images/concept-art/sea.webp);
 }
 
 /*
 .background-image-bangkok {
-    background-image: url(https://scidoggames.com/images/location/bangkok-large.webp);
+    background-image: url(https://scidoggames.com/images/location/bangkok.webp);
 }
 */
 
 /*
 .background-image-cebu {
-    background-image: url(https://scidoggames.com/images/location/cebu-large.webp);
+    background-image: url(https://scidoggames.com/images/location/cebu.webp);
 }
 */
 
 /*
 .background-image-chiang-mai {
-    background-image: url(https://scidoggames.com/images/location/chiang-mai-large.webp);
+    background-image: url(https://scidoggames.com/images/location/chiang-mai.webp);
 }
 */
 
 .background-image-istanbul {
-    background-image: url(https://scidoggames.com/images/location/istanbul-large.webp);
+    background-image: url(https://scidoggames.com/images/location/istanbul.webp);
 }
 
 /*
 .background-image-kuala-lumpur {
-    background-image: url(https://scidoggames.com/images/location/kuala-lumpur-large.webp);
+    background-image: url(https://scidoggames.com/images/location/kuala-lumpur.webp);
 }
 */
 
 /*
 .background-image-taipei {
-    background-image: url(https://scidoggames.com/images/location/taipei-large.webp);
+    background-image: url(https://scidoggames.com/images/location/taipei.webp);
 }
 */
 
