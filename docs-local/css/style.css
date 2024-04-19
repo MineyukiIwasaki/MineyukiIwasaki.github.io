@@ -61,7 +61,6 @@ img{vertical-align:top;height:auto;width:100%;}
 .color-contact{background-color:#222222;color:#888888;}
 .color-copyright{background-color:#111111;color:#888888;}
 .color-default{background-color:#333333;color:#eeeeee;}
-.color-header{background-color:rgba(0,0,0,0.75);color:#eeeeee;}
 .color-menu{color:#eeeeee;}
 .flex-center{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;}
 .flex-space-around{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-around;}
@@ -70,10 +69,9 @@ img{vertical-align:top;height:auto;width:100%;}
 .padding-start{padding-top:10px;}
 .padding-start-header{padding-top:68px;}
 @media(max-width:398px){.padding-start-header{padding-top:96px;}}
-.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;}
+.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-family:'Font Awesome 6 Brands';font-style:normal;font-variant:normal;line-height:1;text-rendering:auto;}
 .fab.fa-pull-left{margin-right:0.3em;}
 .fab.fa-pull-right{margin-left:0.3em;}
-.fab{font-family:'Font Awesome 6 Brands';}
 .fa-fw{text-align:center;width:1.25em;}
 .fa-lg{font-size:1.5em;line-height:0.75em;margin-left:0.05em;vertical-align:-0.15em;}
 .fa-facebook:before{content:"\f09a";}

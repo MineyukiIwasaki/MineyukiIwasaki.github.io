@@ -429,11 +429,6 @@ scale = 103.19 * 168 / 250 / 89.13
     color: #eeeeee;
 }
 
-.color-header {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: #eeeeee;
-}
-
 .color-menu {
     /* background-color is changed by javascipt */
     color: #eeeeee;
@@ -486,6 +481,7 @@ scale = 103.19 * 168 / 250 / 89.13
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
+    font-family: 'Font Awesome 6 Brands';
     font-style: normal;
     font-variant: normal;
     line-height: 1;
@@ -498,10 +494,6 @@ scale = 103.19 * 168 / 250 / 89.13
 
 .fab.fa-pull-right {
     margin-left: 0.3em;
-}
-
-.fab {
-    font-family: 'Font Awesome 6 Brands';
 }
 
 .fa-fw {
