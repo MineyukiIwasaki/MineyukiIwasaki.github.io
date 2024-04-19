@@ -65,7 +65,7 @@ img{vertical-align:top;height:auto;width:100%;}
 .color-menu{color:#eeeeee;}
 .flex-center{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;}
 .flex-space-around{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-around;}
-.flex-space-evenly{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-evenly;}
+.flex-space-evenly{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-evenly;width:100%;}
 .padding-end{padding-bottom:10px;}
 .padding-start{padding-top:10px;}
 .padding-start-header{padding-top:68px;}

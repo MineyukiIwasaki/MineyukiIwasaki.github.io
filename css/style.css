@@ -459,6 +459,7 @@ scale = 103.19 * 168 / 250 / 89.13
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 /* Padding */
