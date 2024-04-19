@@ -9,7 +9,6 @@
 | Instagram | https://www.instagram.com/scidoggames |
 | YouTube | https://www.youtube.com/@ScidogGames |
 
-
 ## SETTINGS
 ### Bio
 - 96 characters (Facebook: 101, X: 160, Instagram: 150, YouTube: 1000)
