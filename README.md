@@ -9,9 +9,6 @@
 | Instagram | https://www.instagram.com/scidoggames |
 | YouTube | https://www.youtube.com/@ScidogGames |
 
-## RULES
-### Icons
-- 416 x 416 -> 512 x 512
 
 ## SETTINGS
 ### Bio
@@ -19,6 +16,8 @@
 ```
 Making a voxel based game with Unity. Check out "Indie Game Devlog For Retro Gamers" on YouTube!
 ```
+### Icons
+- 416 x 416 -> 512 x 512
 ### Hash Tags
 ```
 #gamedev #indiedev #voxel #unity3d #madewithunity #magicavoxel #screenshotsaturday
