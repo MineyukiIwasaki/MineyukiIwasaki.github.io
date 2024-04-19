@@ -1,5 +1,5 @@
 # SCIDOG GAMES WEBSITE AND SNS
-<img src="https://scidoggames.com/images/blog/our-website-is-opened/1-1920x1020.webp" width="1280">
+<img src="https://scidoggames.com/images/blog/our-website-is-opened/1.webp" width="1280">
 
 | Service | URL |
 | --- | --- |
@@ -9,7 +9,7 @@
 | Instagram | https://www.instagram.com/scidoggames |
 | YouTube | https://www.youtube.com/@ScidogGames |
 
-## Rules
+## RULES
 ### Icons
 - 416 x 416 -> 512 x 512
 
@@ -28,5 +28,3 @@ Making a voxel based game with Unity. Check out "Indie Game Devlog For Retro Gam
 - Check the external links.
 - Update the copyright every year.
 - Update the Unity app-ads.txt at https://dashboard.unity3d.com/gaming/organizations/761278/monetization/organization-settings
-
-- Update privacy policy
