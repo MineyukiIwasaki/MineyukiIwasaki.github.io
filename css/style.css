@@ -429,6 +429,11 @@ scale = 103.19 * 168 / 250 / 89.13
     color: #eeeeee;
 }
 
+.color-header {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #eeeeee;
+}
+
 .color-menu {
     /* background-color is changed by javascipt */
     color: #eeeeee;
