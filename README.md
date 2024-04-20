@@ -1,4 +1,5 @@
 # SCIDOG GAMES WEBSITE AND SNS
+<img src="https://scidoggames.com/images/scidog-games/favicon.webp" height="48">
 <img src="https://scidoggames.com/images/blog/our-website-is-opened/1.webp" height="360">
 
 | Service | URL |
