@@ -48,8 +48,9 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub('<p>(.+?)<a href(.*?)</a>(.+?)</p>', r'<p>\1 <a href\2</a> \3</p>', content)
             match = re.search('<meta name="viewport" content=".*?">', content).group(0).replace(', ', ',')
             content = re.sub('<meta name="viewport" content=".*?">', match, content)
-            match = re.search('<script>.*?</script>', content).group(0).replace(' ', '').replace('function', 'function ').replace('new', 'new ')
-            content = re.sub('<script>.*?</script>', match, content)
+            # Paused for GDPR
+            # match = re.search('<script>.*?</script>', content).group(0).replace(' ', '').replace('function', 'function ').replace('new', 'new ')
+            # content = re.sub('<script>.*?</script>', match, content)
 
         # Optimize css
         if ext == '.css':

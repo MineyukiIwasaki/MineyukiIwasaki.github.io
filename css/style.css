@@ -324,6 +324,7 @@ scale = 103.19 * 168 / 250 / 89.13
 }
 
 /* YouTube */
+/* Paused for GDPR
 .youtube>div {
     margin: 10px;
     max-width: 800px;
@@ -341,6 +342,7 @@ scale = 103.19 * 168 / 250 / 89.13
     position: absolute;
     width: 100%;
 }
+*/
 
 /* Animation */
 .animation-slide-in {
