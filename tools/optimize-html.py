@@ -4,9 +4,8 @@
 
 import os
 import re
-import sys
 
-DEPLOY_PATH = sys.argv[1]
+DEPLOY_PATH = 'docs'
 
 # Find all html, css, js and svg
 for root, _, files in os.walk(DEPLOY_PATH):

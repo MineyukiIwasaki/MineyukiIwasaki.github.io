@@ -49,11 +49,11 @@ img{vertical-align:top;height:auto;width:100%;}
 .store-google-play{margin:10px;min-width:160px;opacity:40%;width:calc(100%/3);}
 .animation-slide-in{animation:animation-slide-in 1s ease;will-change:animation,transform;}
 @keyframes animation-slide-in{0%{transform:translateY(-300px);}100%{transform:translateY(0px);}}
-.background-image-swapon{background-image:url(https://scidoggames.com/images/games/swapon/background.webp);}
-.background-image-building{background-image:url(https://scidoggames.com/images/concept-art/building.webp);}
-.background-image-forest{background-image:url(https://scidoggames.com/images/concept-art/forest.webp);}
-.background-image-sea{background-image:url(https://scidoggames.com/images/concept-art/sea.webp);}
-.background-image-istanbul{background-image:url(https://scidoggames.com/images/location/istanbul.webp);}
+.background-image-swapon{background-image:url(file://C:/Users/miney/Documents/Website/docs-local/images/games/swapon/background.webp);}
+.background-image-building{background-image:url(file://C:/Users/miney/Documents/Website/docs-local/images/concept-art/building.webp);}
+.background-image-forest{background-image:url(file://C:/Users/miney/Documents/Website/docs-local/images/concept-art/forest.webp);}
+.background-image-sea{background-image:url(file://C:/Users/miney/Documents/Website/docs-local/images/concept-art/sea.webp);}
+.background-image-istanbul{background-image:url(file://C:/Users/miney/Documents/Website/docs-local/images/location/istanbul.webp);}
 .color-button{background-color:#444444;color:#eeeeee;}
 .color-contact{background-color:#222222;color:#888888;}
 .color-copyright{background-color:#111111;color:#888888;}

@@ -5,12 +5,9 @@
 import datetime
 import os
 import re
-import sys
 
 BASE_HTML_FILENAME = 'base.html'
-DEPLOY_PATH = sys.argv[1]
-LOCAL_DEPLOY_PATH = 'file:///Users/mine/Documents/Website/docs-local'
-LOCAL_DEPLOY_PATH_WINDOWS = 'file://C:/Users/miney/Documents/Website/docs-local'
+DEPLOY_PATH = 'docs'
 SOURCE_PATH = 'html'
 
 # Read base html
@@ -63,14 +60,6 @@ for root, _, files in os.walk(SOURCE_PATH):
         else:
             html = re.sub('__PARALLAX__', 'color-header', html)
             html = re.sub('<script.*?script.js.*?</script>', '', html)
-
-        # Setup for local environment
-        if sys.argv[1] == 'docs-local':
-            html = re.sub('"(https://scidoggames.com.*/)"', r'"\1index.html"', html)
-            if os.name == 'nt':
-                html = re.sub('"https://scidoggames.com', f'"{LOCAL_DEPLOY_PATH_WINDOWS}', html)
-            else:
-                html = re.sub('"https://scidoggames.com', f'"{LOCAL_DEPLOY_PATH}', html)
 
         # Make file path and dir path
         path = re.search('https://scidoggames.com/(.*)', url).group(1)

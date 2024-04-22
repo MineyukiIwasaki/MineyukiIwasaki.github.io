@@ -4,9 +4,8 @@
 
 import os
 import re
-import sys
 
-DEPLOY_PATH = sys.argv[1]
+DEPLOY_PATH = 'docs'
 SITEMAP_PATH = os.path.join(DEPLOY_PATH, 'sitemap.xml')
 
 # Find all URLs

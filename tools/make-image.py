@@ -4,9 +4,8 @@
 
 import os
 import re
-import sys
 
-DEPLOY_PATH = sys.argv[1]
+DEPLOY_PATH = 'docs'
 EXTENSIONS = ('.gif', '.heic', '.jpg', '.png', '.svg', '.tif', '.webp')
 SOURCE_PATH = 'images'
 

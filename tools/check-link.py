@@ -5,9 +5,8 @@
 import os
 import re
 import requests
-import sys
 
-DEPLOY_PATH = sys.argv[1]
+DEPLOY_PATH = 'docs'
 EXTENSIONS = ('.css', '.html', '.js', '.svg', '.xml')
 PRECONNECTS = ('https://fonts.gstatic.com', 'https://use.fontawesome.com')
 
