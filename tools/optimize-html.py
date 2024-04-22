@@ -6,22 +6,23 @@ import os
 import re
 
 DEPLOY_PATH = 'docs'
+EXTENSIONS = ('.css', '.html', '.js', '.svg')
 
-# Find all html, css, js and svg
+# Find all files
 for root, _, files in os.walk(DEPLOY_PATH):
     for file in files:
         base, ext = os.path.splitext(file)
-        if ext != '.html' and ext != '.css' and ext != '.js' and ext != '.svg':
+        if ext.lower() not in EXTENSIONS:
             continue
 
-        # Read html, css, js and svg
+        # Read file
         file_path = os.path.join(root, file)
         f = open(file_path, 'r', encoding='utf-8')
         original_content = f.read()
         f.close()
 
         # Optimize html
-        if ext == '.html':
+        if ext.lower() == '.html':
             # Remove comments
             content = re.sub('<!--.*?-->', '', original_content, flags=re.DOTALL)
             # Remove spaces
@@ -52,7 +53,7 @@ for root, _, files in os.walk(DEPLOY_PATH):
             # content = re.sub('<script>.*?</script>', match, content)
 
         # Optimize css
-        if ext == '.css':
+        if ext.lower() == '.css':
             # Remove comments
             content = re.sub(r'/\*.*?\*/', '', original_content, flags=re.DOTALL)
             # Remove spaces
@@ -76,7 +77,7 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub('@(.*?){(.*?){(.*?)}\n(.*?){(.*?)}\n}\n', r'@\1{\2{\3}\4{\5}}\n', content)
 
         # Optimize js
-        if ext == '.js':
+        if ext.lower() == '.js':
             # Remove comments
             content = re.sub(r'/\*.*?\*/', '', original_content, flags=re.DOTALL)
             content = re.sub('//.*?\n', '', content)
@@ -105,7 +106,7 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub('\n$', '', content)
 
         # Optimize svg
-        if ext == '.svg':
+        if ext.lower() == '.svg':
             # Remove spaces
             content = re.sub('\n', ' ', original_content)
             content = re.sub(' +', ' ', content)
@@ -140,7 +141,9 @@ for root, _, files in os.walk(DEPLOY_PATH):
             content = re.sub(' *xmlns:sodipodi=".*?"', '', content)
             content = re.sub(' *xmlns:svg=".*?"', '', content)
 
-        # Write html, css, js and svg
+        # Write file
+        if content == original_content:
+            continue
         f = open(file_path, 'w', encoding='utf-8')
         f.write(content)
         f.close()
