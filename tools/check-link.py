@@ -7,8 +7,8 @@ import re
 import requests
 
 DEPLOY_PATH = 'docs'
-EXTENSIONS = ('.css', '.html', '.js', '.svg', '.xml')
-PRECONNECTS = ('https://fonts.gstatic.com', 'https://use.fontawesome.com')
+EXTENSIONS = ('.css', '.html', '.js', '.xml')
+IGNORE_LIST = ('https://fonts.gstatic.com', 'https://use.fontawesome.com', 'http://www.sitemaps.org/schemas/sitemap/0.9')
 
 # Find all URLs
 urls = []
@@ -21,7 +21,7 @@ for root, _, files in os.walk(DEPLOY_PATH):
         content = f.read()
         f.close()
         for match in re.finditer('["(>]{1}(http.*?)[")<]{1}', content):
-            if match.group(1) in PRECONNECTS:
+            if match.group(1) in IGNORE_LIST:
                 continue
             urls.append(match.group(1))
 urls = list(dict.fromkeys(urls))

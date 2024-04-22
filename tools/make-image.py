@@ -28,11 +28,12 @@ for root, _, files in os.walk(SOURCE_PATH):
             continue
 
         # Get width and height from filename
-        width = float(re.search('(.*?)-([0-9]+)x([0-9]+)-([0-9]+)', base).group(2))
-        height = float(re.search('(.*?)-([0-9]+)x([0-9]+)-([0-9]+)', base).group(3))
-        new_width = int(re.search('(.*?)-([0-9]+)x([0-9]+)-([0-9]+)', base).group(4))
+        match = re.search('(.*?)-([0-9]+)x([0-9]+)-([0-9]+)', base)
+        base = match.group(1)
+        width = float(match.group(2))
+        height = float(match.group(3))
+        new_width = int(match.group(4))
         new_height = int(new_width * height / width)
-        base = re.search('(.*?)-([0-9]+)x([0-9]+)-([0-9]+)', base).group(1)
 
         # Convert to webp
         input_file = os.path.join(root, file)
