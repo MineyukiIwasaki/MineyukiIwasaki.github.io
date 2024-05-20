@@ -6,7 +6,7 @@
 | --- | --- |
 | Website | https://scidoggames.com |
 | Facebook | https://www.facebook.com/ScidogGames |
-| X | https://twitter.com/ScidogGames |
+| X | https://x.com/ScidogGames |
 | Instagram | https://www.instagram.com/scidoggames |
 | YouTube | https://www.youtube.com/@ScidogGames |
 
