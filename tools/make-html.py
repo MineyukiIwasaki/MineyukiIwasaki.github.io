@@ -2,7 +2,6 @@
 # coding: utf-8
 # (c) 2021 Mineyuki Iwasaki
 
-import datetime
 import os
 import re
 
@@ -40,7 +39,6 @@ for root, _, files in os.walk(SOURCE_PATH):
         parallax = re.search('<parallax> *(.*?) *</parallax>', html).group(1)
         title = re.search('<title> *(.*?) *</title>', html).group(1)
         url = re.search('<url> *(.*?) *</url>', html).group(1)
-        year = str(datetime.datetime.now().year)
 
         # Replace html with <head>, <header> and <footer> of base html
         html = re.sub('<head>.*?</head>', base_head, html, flags=re.DOTALL)
@@ -54,7 +52,6 @@ for root, _, files in os.walk(SOURCE_PATH):
         html = re.sub('__IMAGE__', image, html)
         html = re.sub('__TITLE__', title, html)
         html = re.sub('__URL__', url, html)
-        html = re.sub('__YEAR__', year, html)
         if parallax == 'yes':
             html = re.sub('__PARALLAX__', '', html)
         else:
