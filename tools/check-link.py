@@ -15,7 +15,7 @@ urls = []
 for root, _, files in os.walk(DEPLOY_PATH):
     for file in files:
         base, ext = os.path.splitext(file)
-        if ext.lower() not in EXTENSIONS:
+        if ext == '' or ext.lower() not in EXTENSIONS:
             continue
         f = open(os.path.join(root, file), 'r', encoding='utf-8')
         content = f.read()

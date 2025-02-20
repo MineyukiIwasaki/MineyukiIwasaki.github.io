@@ -14,7 +14,7 @@ LOCAL_PATH_WINDOWS = 'file://C:/Users/miney/Documents/Website/docs-local'
 for root, _, files in os.walk(DEPLOY_PATH):
     for file in files:
         base, ext = os.path.splitext(file)
-        if ext.lower() not in EXTENSIONS:
+        if ext == '' or ext.lower() not in EXTENSIONS:
             continue
 
         # Read file
