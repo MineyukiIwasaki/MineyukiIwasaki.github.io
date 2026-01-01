@@ -75,7 +75,7 @@ for root, _, files in os.walk(SOURCE_PATH):
             os.makedirs(dir_path)
 
         # Write html
-        f = open(file_path, 'w', encoding='utf-8')
+        f = open(file_path, 'w', encoding='utf-8', newline='\n')
         f.write(html)
         f.close()
         print(f'Generated {file_path}')

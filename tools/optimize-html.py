@@ -144,7 +144,7 @@ for root, _, files in os.walk(DEPLOY_PATH):
         # Write file
         if content == original_content:
             continue
-        f = open(file_path, 'w', encoding='utf-8')
+        f = open(file_path, 'w', encoding='utf-8', newline='\n')
         f.write(content)
         f.close()
         print(f'Optimized {file_path} {len(original_content) / 1000:.2f}kb -> {len(content) / 1000:.2f}kb' + \

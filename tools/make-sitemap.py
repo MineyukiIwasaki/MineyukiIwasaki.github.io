@@ -22,7 +22,7 @@ for root, _, files in os.walk(DEPLOY_PATH):
 urls.sort()
 
 # Make sitemap
-f = open(SITEMAP_PATH, 'w', encoding='utf-8')
+f = open(SITEMAP_PATH, 'w', encoding='utf-8', newline='\n')
 f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
 f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
 for url in urls:
